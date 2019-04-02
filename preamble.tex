@@ -1,0 +1,435 @@
+%%<<140818>> update this preamble file in terms of the beamer version
+%%<<141022>> merged the beamer version and the manu version together and re-locate it at latex_refs/
+%%<<190330>> adapted for my thesis. Need to add the following line to bibtex. see: https://tex.stackexchange.com/questions/365215/natbib-newblock-undefined-error-with-informs3-document-class
+\newcommand{\newblock}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% packages and settings useful globally
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[utf8]{inputenc} % useful to type directly diacritic characters
+\usepackage{graphicx}       % you can specify [driver] (e.g. [pdftex]) which is the dvi to postscript program
+\usepackage{natbib}         % enables the use of \citep and others; see http://merkel.zoneo.net/Latex/natbib.php
+\usepackage{url}            % enables the use of url web links
+\urlstyle{rm}
+\usepackage{grffile}        % enables dots and underscores in .pdf filenames
+\usepackage{mathtools}      % enables the use of various environments work, e.g., |align|, |dcases|, define symbols (see below), etc.
+\usepackage{bbold}          % enables the use of \mathbb{1} as the identity matrix
+\newcommand{\bb}{\mathbb}
+\usepackage{bbm}            % enables the use of bold Greek symbols
+\newcommand{\bs}{\boldsymbol}
+%\DeclareGraphicsRule{.tif}{png}{.jpg}{.bmp}
+\usepackage{multirow}       % enables the use of \multirow{num}{*}{text} in deluxetable
+\usepackage{xspace}         % enables the use of \xspace in defining macros
+%\usepackage{epstopdf}
+%\usepackage{ccaption}       % continuation of caption for figures containing multiple floats
+\usepackage{amsmath,amssymb,amsxtra,amsfonts}   % to use pmatrix, etc.
+\usepackage{txfonts}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% special packages and corresponding usages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------- provide circled numbers
+%\usepackage{tikz}
+%\newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+%-------------- use \mathsmaller and \mathlarger to resize math symbols
+%\usepackage{relsize}
+%-------------- for dynamic display of tables, see
+%               http://www.math-linux.com/latex-26/article/how-to-make-a-presentation-with-latex-introduction-to-beamer
+%\usepackage{colortbl}
+%-------------- correct total number of pages for appendix, have to be commented off when using \appendix in ms.tex
+%               http://texblog.org/2012/05/24/correct-total-number-of-pages-with-backup-slides-in-beamer-presentations/
+%\usepackage{appendixnumberbeamer}
+%-------------- strikethrough in beamer itemize, see
+%               http://tex.stackexchange.com/questions/35767/in-beamer-how-to-strike-through-an-item-after-displaying
+%\usepackage{ulem}       % turn \emph to \underline
+%\renewcommand<>{\sout}[1]{\alt#2{\beameroriginal{\sout}{#1}}{#1}}
+%-------------- enable the use of enumitem (e.g. for creating checkbox todo list, see below), see
+%				http://tex.stackexchange.com/questions/24371/does-enumitem-conflict-with-beamer-for-lists
+%\usepackage{enumitem}      %  NOTE: once uncommented, cannot use env {itemize, enumerate} any more
+%\setitemize{label=\usebeamerfont*{itemize item}%
+%  \usebeamercolor[fg]{itemize item}
+%  \usebeamertemplate{itemize item}}
+%%-------------- create checkbox and todo list in itemize (need to enable enumitem), see
+%%               http://tex.stackexchange.com/questions/247681/how-to-create-checkbox-todo-list
+%\usepackage{enumitem}      %  NOTE: once uncommented, cannot use env {itemize, enumerate} any more
+%\newlist{todolist}{itemize}{2}
+%\setlist[todolist]{label=$\square$}
+%\usepackage{pifont}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\newcommand{\cmark}{\ding{51}}%
+%\newcommand{\xmark}{\ding{55}}%
+%\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+%\hspace{-2.5pt}}
+%\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+%-------------- include videos, works for .flv, .mov format
+%\usepackage{media9}
+%-------------- encourage a break at this point
+%\newcommand{\smallspace}{\vspace{3cm}\goodbreak}
+%\newcommand{\bigspace}{\vspace{4.5cm}\goodbreak}
+%\newcommand{\biggerspace}{\vspace{5.5cm}\goodbreak}
+%-------------- put the points in the left margin, see latex_manuscripts/reference/hw3_sol_fin.tex
+%\reversemarginpar
+%\newcommand{\worth}[1]
+%        {\mbox{}\marginpar{\em #1}\nolinebreak}%puts value in margin
+%-------------- Flexible typesetting of table and figure floats, see: https://ctan.org/pkg/ctable
+%\usepackage{ctable}
+%-------------- add texts in box, see: https://tex.stackexchange.com/questions/36524/how-to-put-a-framed-box-around-text-math-environment/36528
+%\usepackage{tcolorbox}
+
+% -----------------------------------------------------------------------------------------------
+% Turning references and citations into hyperlinks in color
+\usepackage{color}         % using color package; put color boxes around text: \fcolorbox{frame colour}{background colour}{text}
+\definecolor{gold}{rgb}{1,0.80,0}
+\definecolor{orange}{rgb}{1,0.5,0}
+\definecolor{midgray}{gray}{0.3}
+\definecolor{lblue}{rgb}{0,0.2,0.6}
+\definecolor{dgreen}{rgb}{0.1,0.6,0.3}
+\definecolor{purple}{rgb}{0.5019607843137255,0.0,0.5019607843137255}
+\usepackage[colorlinks=true,citecolor=lblue,linkcolor=black]{hyperref}    % does not work when enabling draft, nor with beamer
+
+% -----------------------------------------------------------------------------------------------
+% Reference a section by ``section XX'', without generating text like ``subsection XX'' as is done by \autoref.
+\newcommand{\secref}[1]{Section~\ref{#1}}
+\newcommand{\figref}[1]{Figure~\ref{#1}}
+\newcommand{\Eqref}[1]{Equation~(\ref{#1})}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% only necessary for poster
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{wrapfig}
+%\usepackage{caption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% only necessary for emulateapj
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% - - - - - - - - already defined
+%\newcommand\farcs{\mbox{$.\!^{\prime\prime}$}}    % arcsec with a decimal point in front
+%\newcommand\farcm{\mbox{$.\mkern-4mu^\prime$}}      % arcmin with a decimal point in front
+%\newcommand{\arcsec}{\mbox{$\!^{\prime\prime}$}\xspace}  % the unit of arcsec
+%\newcommand{\arcmin}{\mbox{$\!^{\prime}$}\xspace}          % the unit of arcmin
+%\newcommand{\arcdeg}{\mbox{$^{\circ}$}\xspace}             % the unit of arcdeg
+% - - - - - - - - have to comment off when using emulateapj
+\usepackage{marvosym}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% mathematical symbols
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\font\fb=''[cmr10]'' %for use with \LaTeX command
+% pre-existing symbols: \exp, \ln, \log
+%\newcommand{\rmd}{\textrm{d}}
+%\def\d{\textrm{d}}   % NOTE: \newcommad doesn't work but this works!
+\def\prt{\partial}
+\def\cP{{\cal P}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\non}{\nonumber}
+\newcommand{\ba}{\begin{align}}
+\newcommand{\ea}{\end{align}}
+\newcommand{\nt}{\notag}
+\def\abs#1{\left|{#1}\right|}
+\newcommand{\avg}[1]{\left<#1\right>}
+%-------- provide define symbols
+\newcommand{\defeq}{\vcentcolon=}
+\newcommand{\eqdef}{=\vcentcolon}
+%-------- formatted arrows
+\newcommand{\Ra}{\ensuremath{\Rightarrow}\xspace}
+\newcommand{\ra}{\ensuremath{\rightarrow}\xpace}
+\newcommand{\lra}{\ensuremath{\Leftrightarrow}\xspace}
+% Statistical mean (angle brackets)
+\newcommand{\stmean}[1]{\langle{#1}\rangle}
+\newcommand{\logg}{\log_{10}}	% base-10 logarithm
+% Spatial-curvature function in cosmological distances.
+\DeclareMathOperator{\sk}{S}
+% Trace of a linear operator or matrix
+\DeclareMathOperator{\tr}{tr}
+% Differential (must be upright Roman letter, per MNRAS)
+\DeclareMathOperator{\ud}{d}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% (astro)physical units and quantities
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% - - - - - - - - quantities
+\newcommand{\Msun}{\ensuremath{M_\odot}\xspace}
+\newcommand{\Rsun}{\ensuremath{R_\odot}\xspace}
+\newcommand{\Lsun}{\ensuremath{L_\odot}\xspace}
+\newcommand{\thE}{\ensuremath{\theta_{\rm E}}\xspace}
+\newcommand{\chisq}{\ensuremath{\chi^2}\xspace}
+\newcommand{\zspec}{\ensuremath{z_{\rm spec}}\xspace}
+\newcommand{\zphot}{\ensuremath{z_{\rm phot}}\xspace}
+\newcommand{\Mstar}{\ensuremath{M_\ast}\xspace}
+\newcommand{\Lstar}{\ensuremath{L_\ast}\xspace}
+\newcommand{\Sstar}{\ensuremath{\Sigma_\ast}\xspace}
+\newcommand{\oh}{\ensuremath{12+\log({\rm O/H})}\xspace}
+\newcommand{\Av}{\ensuremath{A_{\rm V}}\xspace}
+\newcommand{\Rv}{\ensuremath{R_{\rm V}}\xspace}
+\newcommand{\Te}{\ensuremath{T_{\rm e}}\xspace}
+\def\ne{\ensuremath{n_{\rm e}}\xspace}
+\newcommand{\SFR}{\ensuremath{{\rm SFR}}\xspace}
+\newcommand{\Mgas}{\ensuremath{M_{\rm gas}}\xspace}
+\newcommand{\Sgas}{\ensuremath{\Sigma_{\rm gas}}\xspace}
+\newcommand{\fgas}{\ensuremath{f_{\rm gas}}\xspace}
+\newcommand{\Zgas}{\ensuremath{Z_{\rm gas}}\xspace}
+\newcommand{\tage}{\ensuremath{t_{\rm age}}\xspace}
+\newcommand{\Vrot}{\ensuremath{V_{\rm rot}}\xspace}
+\newcommand{\reff}{\ensuremath{r_{\rm eff}}\xspace}
+\newcommand{\Dn}{\ensuremath{{\rm D}_n(4000)}\xspace}
+\newcommand{\HdA}{\ensuremath{{\rm H}\delta_A}\xspace}
+\newcommand{\scrit}{\ensuremath{\sigma_{\rm crit}}\xspace}
+
+% - - - - - - - - units
+\newcommand{\eV}{\ensuremath{\rm eV}\xspace}
+\newcommand{\pc}{\ensuremath{\rm pc}\xspace}
+\newcommand{\kpc}{\ensuremath{\rm kpc}\xspace}
+\newcommand{\Mpc}{\ensuremath{\rm Mpc}\xspace}
+\newcommand{\K}{\ensuremath{\rm K}\xspace}
+\newcommand{\mK}{\ensuremath{\rm mK}\xspace}
+\newcommand{\Hunit}{\ensuremath{\rm km~s^{-1}~Mpc^{-1}}\xspace}
+\newcommand{\Funit}{\ensuremath{\rm erg~s^{-1}~cm^{-2}}\xspace}
+\newcommand{\Flam}{\ensuremath{\rm erg~s^{-1}~cm^{-2}~\AA^{-1}}\xspace}
+\newcommand{\Fnu}{\ensuremath{\rm erg~s^{-1}~cm^{-2}~Hz^{-1}}\xspace}
+\newcommand{\muJy}{\ensuremath{\mu\rm Jy}\xspace}
+\newcommand{\SBunit}{\ensuremath{\rm erg~s^{-1}~cm^{-2}~arcsec^{-2}}\xspace}
+\newcommand{\magarcs}{\ensuremath{\rm mag~arcsec^{-2}}\xspace}
+\newcommand{\Msunyr}{\ensuremath{\Msun~\mathrm{yr}^{-1}}\xspace}
+\newcommand{\yr}{\ensuremath{\rm yr}\xspace}
+\newcommand{\Myr}{\ensuremath{\rm Myr}\xspace}
+\newcommand{\Gyr}{\ensuremath{\rm Gyr}\xspace}
+\def\micron{\ensuremath{\mu\textrm{m}}\xspace}  % better than the default \micron, which does not use \xspace
+\newcommand{\kms}{\ensuremath{\rm km~s^{-1}}\xspace}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% astrophysical aliases and jargons
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand\ionp[2]{#1$\;${\scshape{#2}}}      % ion permitted transitions, i.e., C IV = \ionp{C}{iv}
+\newcommand\ionf[2]{[#1$\;${\scshape{#2}}]}    % ion forbidden transitions, i.e., [O III] = \ionf{O}{iii}
+\newcommand\ions[2]{#1$\;${\scshape{#2}}]}     % ion semi-forbidden transitions, i.e., C III] = \ions{C}{iii}
+\newcommand{\Ha}{\textrm{H}\ensuremath{\alpha}\xspace}
+\newcommand{\Hb}{\textrm{H}\ensuremath{\beta}\xspace}
+\newcommand{\Hg}{\textrm{H}\ensuremath{\gamma}\xspace}
+\newcommand{\HII}{\textrm{H}\textsc{ii}\xspace}
+\newcommand{\HI}{\textrm{H}\textsc{i}\xspace}
+\newcommand{\Htwo}{\textrm{H}\ensuremath{_2}\xspace}
+\newcommand{\He}{\textrm{He}\xspace}
+\newcommand{\OI}{[\textrm{O}~\textsc{i}]\xspace}
+\newcommand{\OII}{[\textrm{O}~\textsc{ii}]\xspace}
+\newcommand{\OIII}{[\textrm{O}~\textsc{iii}]\xspace}
+\newcommand{\CIII}{\textrm{C}~\textsc{iii}]\xspace}
+\newcommand{\NII}{[\textrm{N}~\textsc{ii}]\xspace}
+\newcommand{\SII}{[\textrm{S}~\textsc{ii}]\xspace}
+\newcommand{\NeIII}{[\textrm{Ne}~\textsc{iii}]\xspace}
+\newcommand{\sersic}{S\'{e}rsic\xspace}
+\newcommand{\lya}{\textrm{Ly}\ensuremath{\alpha}\xspace}
+% - - - - - - - - astrometric filters
+\def\B{\ensuremath{B_{435}}\xspace}
+\def\V{\ensuremath{V_{606}}\xspace}
+\def\I{\ensuremath{I_{814}}\xspace}
+\def\Y{\ensuremath{Y_{105}}\xspace}
+\def\J{\ensuremath{J_{125}}\xspace}
+\def\JH{\ensuremath{JH_{140}}\xspace}
+\def\H{\ensuremath{H_{160}}\xspace}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% my specific macros for objects, software, instruments, telescopes, projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% - - - - - - - - celestial objects
+\newcommand{\clyi}{MACS1149.6+2223\xspace}
+\newcommand{\cler}{Abell 2744\xspace}
+\newcommand{\clsan}{Abell 370\xspace}
+\newcommand{\clsi}{MACS0416.1-2403\xspace}
+\newcommand{\clwu}{MACS0717.5+3745\xspace}
+\newcommand{\clliu}{RXJ2248.7-4431\xspace}
+\newcommand{\clqi}{RXJ1347.5-1145\xspace}
+\newcommand{\clba}{MACS0744.9+3927\xspace}
+\newcommand{\cljiu}{MACS2129.4-0741\xspace}
+\newcommand{\clshi}{MACS1423.8+2404\xspace}
+
+% - - - - - - - - software
+\newcommand{\pylf}{\textsc{pyLensFix}\xspace}
+\newcommand{\lf}{\textsc{LensFix}\xspace}
+\newcommand{\sw}{\textsc{SWunited}\xspace}
+\newcommand{\sex}{\textsc{SExtractor}\xspace}
+\newcommand{\emc}{\textsc{Emcee}\xspace}
+\newcommand{\linmix}{\textsc{linmix}\xspace}
+\newcommand{\adriz}{\textsc{AstroDrizzle}\xspace}
+\newcommand{\dpac}{\textsc{DrizzlePac}\xspace}
+\newcommand{\fast}{\textsc{FAST}\xspace}
+\newcommand{\galfit}{\textsc{Galfit}\xspace}
+\newcommand{\axe}{\textsc{aXe}\xspace}
+\def\lt{\textsc{Lenstool}\xspace}
+\newcommand{\glafic}{\textsc{Glafic}\xspace}
+\newcommand{\gasoline}{\textsc{Gasoline}\xspace}
+\newcommand{\ramses}{\textsc{Ramses}\xspace}
+\newcommand{\SJ}{\textsc{Sharon \& Johnson}\xspace}
+\newcommand{\grzl}{\textsc{Grzili}\xspace}
+\newcommand{\burst}{\textsc{Starburst99}\xspace}
+
+% - - - - - - - - projects, telescopes, instruments
+\newcommand{\planck}{\textit{Planck}\xspace}
+\newcommand{\hst}{\textit{HST}\xspace}
+\newcommand{\jwst}{\textit{JWST}\xspace}
+\newcommand{\spitzer}{\textit{Spitzer}\xspace}
+\newcommand{\herschel}{\textit{Herschel}\xspace}
+\newcommand{\chandra}{\textit{Chandra}\xspace}
+\newcommand{\glass}{\textit{GLASS}\xspace}
+\newcommand{\wisp}{\textit{WISP}\xspace}
+\newcommand{\clash}{\textit{CLASH}\xspace}
+\newcommand{\candels}{\textit{CANDELS}\xspace}
+\newcommand{\hff}{\textit{HFF}\xspace}
+\newcommand{\muse}{\textit{MUSE}\xspace}
+\newcommand{\kmos}{\textit{KMOS}\xspace}
+\newcommand{\keck}{\textit{Keck}\xspace}
+\newcommand{\deimos}{\textit{DEIMOS}\xspace}
+\newcommand{\mosfire}{\textit{MOSFIRE}\xspace}
+\newcommand{\surfsup}{\textit{SURFSUP}\xspace}
+\newcommand{\kd}{\textit{KMOS}$^{3\rm D}$\xspace}
+\newcommand{\sdss}{\textit{SDSS}\xspace}
+\def\clash{\textit{CLASH}\xspace}
+\def\mosdef{\textit{MOSDEF}\xspace}
+\newcommand{\vlt}{\textit{VLT}\xspace}
+\newcommand{\osiris}{\textit{OSIRIS}\xspace}
+\newcommand{\sinf}{\textit{SINFONI}\xspace}
+\newcommand{\wfst}{\textit{WFIRST}\xspace}
+\newcommand{\niriss}{\textit{NIRISS}\xspace}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% format, wording and abbreviations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\etal{et al.\xspace}
+\def\ie{i.e.\xspace}
+\def\eg{e.g.\xspace}
+\def\etc{etc.\xspace}
+\def\aka{a.k.a.\xspace}
+\def\vsv{vis-\'a-vis\xspace}
+\renewcommand\({\left(}
+\renewcommand\){\right)}
+%\renewcommand\[{\left[}
+%\renewcommand\]{\right]}
+
+% - - - - - - - - word combo
+\newcommand\mm{metallicity map\xspace}
+\newcommand\mms{metallicity maps\xspace}
+\newcommand\mg{metallicity gradient\xspace}
+\newcommand\mgs{metallicity gradients\xspace}
+\newcommand\Mgs{Metallicity gradients\xspace}
+\newcommand\mgm{metallicity gradient measurement\xspace}
+\newcommand\mgms{metallicity gradient measurements\xspace}
+\newcommand\sr{spatially resolved\xspace}
+\newcommand\srs{spatially resolved spectroscopy\xspace}
+\newcommand\sra{spatially resolved analysis\xspace}
+\newcommand\gp {gas-phase\xspace}
+\newcommand\gpm{gas-phase metallicity\xspace}
+\newcommand\subr{surface brightness\xspace}        % <<160715>> NOTE: cannot re-DEF \sb
+\def\sf{star-forming\xspace}
+\newcommand\sfr{star-formation rate\xspace}
+\newcommand\sfh{star-formation history\xspace}
+\newcommand\sfms{star-formation main sequence\xspace}
+
+% - - - - - - - - specially formated words
+\newcommand{\el}[1]{\ensuremath{\textrm{EL}_{#1}}}
+\newcommand{\obs}{\textrm{o}}
+\newcommand{\theo}{\textrm{t}}
+\newcommand{\ext}{\textrm{ext}}
+\def\det{\textrm{det}}
+\newcommand\refe{\textrm{ref}}
+\newcommand\pa{\textrm{PA}}
+
+\def\p{{\rm prior}}
+\def\fid{{\rm fid}}
+\def\lnk{\kappa}
+\def\lnkp{\kappa'}
+%\newcommand{\n}{\noindent}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% lensing quantities and parameters
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\xa}{\alpha}
+\newcommand{\xb}{\beta}
+\newcommand{\xk}{\kappa}
+\newcommand{\xg}{\gamma}
+%\newcommand{\xg}[1]{|\gamma #1|}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% cosmological parameters
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Or} {\ensuremath{\Omega_{\rm{r}}}\xspace}
+\newcommand{\Om} {\ensuremath{\Omega_{\rm{m}}}\xspace}
+\newcommand{\Ok} {\ensuremath{\Omega_{\rm{k}}}\xspace}
+\newcommand{\Ol} {\ensuremath{\Omega_{\Lambda}}\xspace}
+\newcommand{\Obh}{\ensuremath{\Omega_{\rm{b}}h^2}\xspace}
+\newcommand{\Ob} {\ensuremath{\Omega_{\rm{b}}}\xspace}
+\newcommand{\Onu}{\ensuremath{\Omega_\nu}\xspace}
+\newcommand{\fnu}{\ensuremath{f_{\nu}}\xspace}
+\newcommand{\Och}{\ensuremath{\Omega_{\rm{DM}}h^2}\xspace}
+\newcommand{\Oc} {\ensuremath{\Omega_{\rm{DM}}}\xspace}
+\newcommand{\ns} {\ensuremath{n_{\rm s}}\xspace}
+\newcommand{\As} {\ensuremath{A_{\rm s}}\xspace}
+%\newcommand{\nt} {\ensuremath{n_{\rm t}}\xspace}
+%\newcommand{\At} {\ensuremath{A_{\rm t}}\xspace}
+\newcommand{\thA}{\ensuremath{\theta_{\rm A}}\xspace}
+%\newcommand{\run}{\ensuremath{{dn_s \over d\ln k}}\xspace}
+\newcommand{\neff}{\ensuremath{N_\textrm{eff}}\xspace}
+\newcommand{\mnu}{\ensuremath{\sum{m_{\nu}}}\xspace}
+\newcommand{\yhe}{\ensuremath{Y_p}\xspace}
+%\newcommand{\nrun}{\ensuremath{dn_s/d\ln k}\xspace}
+\newcommand{\Map}[1]{\left<M^2_\textrm{ap}\right>( #1 )}
+\newcommand{\map}{\ensuremath{\left<M^2_\textrm{ap}\right>}\xspace}
+\newcommand{\chiH}{\ensuremath{\chi_\textrm{H}}\xspace}
+\newcommand{\n}{\ensuremath{{\nu}\rm}\xspace}
+\newcommand{\nue}{\ensuremath{{\nu}_{\rm e}}\xspace}
+\newcommand{\num}{\ensuremath{{\nu}_{\rm \mu}}\xspace}
+\newcommand{\nut}{\ensuremath{{\nu}_{\rm \tau}}\xspace}
+\newcommand{\da}{\ensuremath{D_{\rm A}}\xspace}
+\newcommand{\dl}{\ensuremath{D_{\rm L}}\xspace}
+%\newcommand{\pripk}{\ensuremath{P_{\textrm{pri}}(k)}}
+\newcommand{\taueq}{\ensuremath{\tau_{\rm eq}}\xspace}
+
+%%------------------------------------- begin of a slide ----------------------------------------
+%\begin{frame}{}
+%    block options: alertblock, exampleblock
+%
+%\end{frame}
+%%===================================== end of a slide ==========================================
+
+%%------------------------------------- begin of a slide ----------------------------------------
+%\begin{frame}{Global measurements are not a full exploitation}
+%    \vspace*{-.3em}
+%    \begin{columns}[c]
+%        \begin{column}{5.5cm}
+%        \end{column}
+%        \hspace*{-3em}
+%        \begin{column}{5.5cm}
+%        \end{column}
+%    \end{columns}
+%\end{frame}
+%%===================================== end of a slide ==========================================
+
+%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+% fancy header setup in P88
+%\documentclass{book}
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%% with this we ensure that the chapter and section
+%% headings are in lowercase.
+%\renewcommand{\chaptermark}[1]{%
+%        \markboth{#1}{}}
+%\renewcommand{\sectionmark}[1]{%
+%        \markright{\thesection\ #1}}
+%\fancyhf{}  % delete current header and footer
+%\fancyhead[LE,RO]{\bfseries\thepage}
+%\fancyhead[LO]{\bfseries\rightmark}
+%\fancyhead[RE]{\bfseries\leftmark}
+%\renewcommand{\headrulewidth}{0.5pt}
+%\renewcommand{\footrulewidth}{0pt}
+%\addtolength{\headheight}{0.5pt} % space for the rule
+%\fancypagestyle{plain}{%
+%   \fancyhead{} % get rid of headers on plain pages
+%   \renewcommand{\headrulewidth}{0pt} % and the line
+%}
+

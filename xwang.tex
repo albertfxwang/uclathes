@@ -1,0 +1,85 @@
+
+\documentclass[PhD]{uclathes}
+
+\input{preamble}                         % personal LaTeX macros
+\input{ctx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Usually things live in separate flies.
+%
+% \input {prelim}                           % preliminary page info
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                      %
+%                          PRELIMINARY PAGES                           %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title          {Through the Looking GLASS: \\
+                Spatially Resolving the Physical Properties \\
+                of Star-Forming Galaxies with Slitless Spectroscopy}
+\author         {Xin Wang}
+\department     {Astronomy and Astrophysics}
+% Note:  degreeyear should be optional, but as of  5-Feb-96
+% it seems required or you get a year of ``2''.   -johnh
+\degreeyear     {2019}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chair          {Tommaso L. Treu}
+\member         {Alice E. Shapley}
+\member         {Matthew A. Malkan}
+\member         {Omer M. Blaes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\dedication     {\textsl{To my wife Dr. Xiao-Lei Meng \\
+                who have nourished and sustained me \\
+                with her illuminating love \\
+                especially during the darkest hours}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\acknowledgments{\input{include/acknowledgments}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vitaitem{2006}{Graduated, Yaohua High School, Tianjin, China}
+\vitaitem{2010}{Bachelor of Science in Astronomy, Summa Cum Laude, Department of Astronomy, Nanjing University, Jiangsu Province, China}
+\vitaitem{2013}{Master of Science in Astrophysics, School of Astronomy and Space Sciences, Nanjing University, Jiangsu Province, China}
+\vitaitem{2015}{Master of Arts in Physics, Physics Department, University of California, Santa Barbara, California, USA}
+\vitaitem{2018}{Dissertation Year Fellowship, University of California, Los Angeles, California, USA}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\publication{\input{include/publications}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\abstract{\input{include/abstract}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\makeintropages
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ordinarily each chapter (at least) is in a separate file.
+%
+\input{include/introduction}          % Chapter 1 of dissertation: intro
+\input{include/invertedGrad}          % Chapter 2
+%\input {chapter3}
+%\input {chapter4}
+%\input {chapter5}
+%\input {chapter6}
+%\input {chapter7}
+%\input {chapter8}
+
+
+\bibliographystyle{modapj}
+\bibliography{bibtexlib}
+
+\end{document}
+

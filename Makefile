@@ -23,32 +23,18 @@ tar.gz:
 DVIPS=dvips
 PS2PDF=ps2pdf14
 
-latex latex.demo::
-	latex demo
+latex latex.xwang::
+	latex xwang
+	bibtex xwang
+	latex xwang
+	bibtex xwang
+	latex xwang
 
-ps demo.ps::
-	$(DVIPS) demo
+ps xwang.ps::
+	$(DVIPS) xwang
 
-pdf demo.pdf::
-	$(PS2PDF) demo.ps demo.pdf
-
-latex latex.demo_techreport::
-	latex demo_techreport
-
-ps demo_techreport.ps::
-	$(DVIPS) demo_techreport
-
-pdf demo_techreport.pdf::
-	$(PS2PDF) demo_techreport.ps demo_techreport.pdf
-
-latex latex.thesis_spec::
-	latex thesis_spec
-
-ps thesis_spec.ps::
-	$(DVIPS) thesis_spec
-
-pdf thesis_spec.pdf::
-	$(PS2PDF) thesis_spec.ps thesis_spec.pdf
+pdf xwang.pdf::
+	$(PS2PDF) xwang.ps xwang.pdf
 
 clean:
-	rm *.aux *.toc *.lot *.lof *.dvi *.log *.ps
+	rm -f *.aux *.toc *.lot *.lof *.dvi *.log *.ps *.bbl *.blg *.out
