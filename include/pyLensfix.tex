@@ -1,0 +1,137 @@
+
+\chapter{Improving the Source Plane Morphological Reconstruction of Multiply Imaged Galaxies}
+
+\section{Gravitational lensing and source reconstruction techniques}\label{sec:model}
+
+\subsection{Second order local corrections to the potential}
+
+Given a cluster mass model with a gravitation potential $\psi^M$, the lens equation reads
+
+\begin{equation}
+\boldsymbol \beta^M=\boldsymbol \theta-\nabla \psi^M = \boldsymbol \theta - \boldsymbol \alpha^M,
+\label{eq:lensequationM}
+\end{equation}
+
+where we use the superscript to indicate that quantities that depend on the model. The local distortion of an image is then given by the canonical relation
+
+\begin{equation}
+\frac{\partial \boldsymbol \beta_i^M}{\partial \boldsymbol \theta_j}=\delta_{ij}-\frac{\partial^2 \psi^M}{\partial \theta_i \partial \theta_j}=\left(\begin{array}{cc} 1-\kappa^M-\gamma_1^M & -\gamma_2^M \\
+-\gamma_2^M & 1-\kappa^M+\gamma_1^M \end{array} \right) \equiv A_{ij}^M
+\label{eq:magnification}
+\end{equation}
+
+However, the true potential will be in general different from the one estimated by the model:
+
+\begin{equation}
+\boldsymbol \beta=\boldsymbol \theta-\nabla \psi = \boldsymbol \theta - \boldsymbol \alpha,
+\label{eq:lensequation}
+\end{equation}
+
+We now describe a procedure to obtain the first and derivatives of
+$\delta \psi$. By subtracting Equation~\ref{eq:lensequationM}
+from~\ref{eq:lensequation} we obtain
+
+\begin{equation}
+\boldsymbol \beta - \boldsymbol \beta^M=-\nabla \psi - \nabla \psi^M \equiv -\nabla \delta \psi = \boldsymbol \alpha - \boldsymbol \alpha^M.
+\label{eq:lensequationc}
+\end{equation}
+
+Considering a reference image A, and a different image B, and assuming that $\psi^M(\boldsymbol \theta_A)$ is sufficiently accurate for our purposes (i.e $\delta \psi (\boldsymbol \theta_A)=0$ we can obtain the correction to the first derivative of the potential at position B, by computing equation \ref{eq:lensequationc} at A and B and equating $\beta$. Thus
+
+\begin{equation}
+\nabla \delta \psi(B) = \boldsymbol \beta_B^M - \beta_A^M.
+\label{eq:deflectionc}
+\end{equation}
+
+The correction to the distortion matrix can be derived by considering equation~\ref{eq:lensequationc} in the form
+
+\begin{equation}
+\boldsymbol \beta = \boldsymbol \beta^M -\nabla \delta \psi.
+\label{eq:lensequationc2}
+\end{equation}
+
+There are two alternatives. The first is to consider the transformation from
+$\beta$ to $\theta$ directly, which gives rise to a symmetric matrix of easy interpretation:
+
+%\begin{equation}
+%\frac{\partial \boldsymbol \beta_i}{\partial \boldsymbol \beta_j^M}=\delta_{ij}-\frac{\partial^2 \delta \psi}{\partial \beta_i^M \partial \beta_j^M} \equiv \delta A_{ij}.
+%\label{eq:magnificationc}
+%\end{equation}
+
+\begin{equation}
+\frac{\partial \boldsymbol \beta_i}{\partial \boldsymbol \theta_j}=A^M_{ij}-\frac{\partial^2 \delta \psi}{\partial \theta_i \partial \theta_j} \equiv A^M_{ij}+\delta A_{ij} \equiv B_{ij}
+\label{eq:magnificationc}
+\end{equation}
+
+The elements of $B_{ij}$ are obtained by optimizing the match between
+image B and the reference image C (for example by matching the
+position angle ellipticity and size or pixel by pixel). Note that this
+matrix is symmetric and square by construction, and $\delta A_{ij}$
+can be immediately interpreted as correction to the shear and
+convergence.
+
+Alternatively, one can write
+
+\begin{equation}
+\frac{\partial \boldsymbol \beta_i}{\partial \boldsymbol \theta_j}=
+\sum_{k}\frac{\partial \boldsymbol \beta_i}{\partial \boldsymbol \beta^M_k}
+\frac{\partial \boldsymbol \beta^M_k}{\partial \boldsymbol \theta_j}=
+B_{ij}
+\label{eq:magnificationm}
+\end{equation}
+
+switching to matrix notation and defining the additional matrix $\mathbf C$
+
+\begin{equation}
+\mathbf C  \mathbf A = \mathbf B,
+\label{eq:matrix1}
+\end{equation}
+
+where
+
+\begin{equation}
+\mathbf C_{ij} = \frac{\partial \boldsymbol \beta_i}{\partial \boldsymbol \beta^M_j}
+\label{eq:defC}
+\end{equation}
+
+And remembering that $\mathbf A$ is symmetric and invertible (non-zero determinant) we can write
+
+\begin{equation}
+\mathbf C = \mathbf B \mathbf A^{-1},
+\label{eq:matrix1}
+\end{equation}
+
+I believe what you have derived in your algorithm is $\mathbb C$,
+imposing that it is symmetric, which it needs not be [However:
+physically, I am convinced it must be because of some symmetry in the
+way you derive it, after all you can only align PA, ellipticity and
+size, so three numbers, not 4!]. So you just need to multiply it by
+$\mathbb A$ to obtain $\mathbb B$. Then
+
+\begin{equation}
+    \delta \mathbb A = \mathbb B - \mathbb A= \mathbb C \cdot \mathbb A - \mathbb A = \mathbb {(C-I)\cdot A} \neq 
+    \mathbb {A\cdot (C-I)}
+\label{eq:matrix1}
+\end{equation}
+
+which you can then interpret in terms of corrections to shear and
+convergence. Also, det (CA)=det(C)det(A)=det(B), so the total
+magnification is the product of the magnifications.
+
+In practice, in order to interpret as shear and convergence:
+
+\begin{equation}
+\delta \kappa =
+\frac{1}{2}(-\delta A_{11} - \delta A_{22}) =
+\frac{1}{2} \mathbb A
+\end{equation}
+
+\begin{equation}
+\delta \gamma_2 = -\delta A_{12}
+\end{equation}
+
+\begin{equation}
+\delta \gamma_1 = \frac{1}{2} (-\delta A_{11} + \delta A_{22})
+\end{equation}
+
+

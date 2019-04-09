@@ -38,3 +38,11 @@ pdf xwang.pdf::
 
 clean:
 	rm -f *.aux *.toc *.lot *.lof *.dvi *.log *.ps *.bbl *.blg *.out
+
+paper:
+	pdflatex xwang
+	bibtex xwang
+	pdflatex xwang
+	bibtex xwang
+	pdflatex xwang
+

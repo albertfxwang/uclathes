@@ -1,0 +1,55 @@
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+% Include this table with \input{filename.tex}
+% To rotate in emulateapj do: \begin{turnpage}\input{filename.tex}\end{turnpage}
+% To display it on multiple pages do: \LongTables\input{filename.tex}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\begin{deluxetable}{ccccccccccccc} \tablecolumns{13}
+\tablewidth{0pt}
+\tablecaption{Global demographic properties of the \mg sample analyzed in this work}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\tablehead{
+  \colhead{ID} &
+  \colhead{R.A.} &
+  \colhead{Dec.} &
+  \colhead{$z_{\textrm{spec}}$} &
+  \colhead{$\mu$\tablenotemark{a}} &
+  \colhead{\H magnitude} &
+  \multicolumn{2}{c}{SED fitting} &
+  \multicolumn{3}{c}{EL diagnostics} \\
+  & [deg.] & [deg.] &  &  & [ABmag] & \multicolumn{2}{c}{\hrulefill} & \multicolumn{3}{c}{\hrulefill} & \\
+    & & & & & & log(\Mstar\tablenotemark{b}/\Msun) & $\Av^{\rm S}$\tablenotemark{c} &  \oh  & SFR\tablenotemark{b} [\Msun/yr] &
+    $\Av^{\rm N}$\tablenotemark{c}
+}
+%---------------------------------------------------------------
+\startdata
+01422  &  177.398643  &  22.387499  &  2.28  &  2.35 [2.09, 2.26]  &  24.46  &  $9.29_{-0.01}^{+0.07}$  &  $<0.01$  &  $8.26_{-0.13}^{+0.11}$  &  $15.10_{-7.11}^{+16.76}$  &  $<1.07$  \\
+02389  &  177.406546  &  22.392860  &  1.89  &  43.25 [37.47, 50.28]  &  23.29  &  $8.43_{-0.07}^{+0.06}$  &  $<0.01$  &  $7.88_{-0.15}^{+0.16}$  &  $<6.37$  &  $1.36_{-0.82}^{+0.69}$  \\
+02607\tablenotemark{d}  &  177.413454  &  22.393843  &  1.86  &  3.01 [2.79, 2.98]  &  22.63  &  $10.25_{-0.10}^{+0.06}$  &  $1.70_{-0.18}^{+0.42}$  &  $7.70_{-0.11}^{+0.13}$  &  $>36.51$  &  $2.26_{-0.58}^{+0.31}$  \\
+02806  &  177.392541  &  22.394921  &  1.50  &  4.82 [3.11, 3.51]  &  23.35  &  $8.72_{-0.01}^{+0.19}$  &  $0.50_{-0.01}^{+0.01}$  &  $7.96_{-0.16}^{+0.15}$  &  $1.96_{-0.13}^{+1.37}$  &  $<0.18$  \\
+02918  &  177.412652  &  22.395723  &  1.78  &  2.95 [2.72, 2.91]  &  25.22  &  $8.37_{-0.08}^{+0.15}$  &  $0.10_{-0.10}^{+0.34}$  &  $8.42_{-0.14}^{+0.11}$  &  $<70.32$  &  $1.25_{-0.80}^{+0.72}$  \\
+03746  &  177.391848  &  22.400105  &  1.25  &  3.78 [3.56, 3.83]  &  22.48  &  $8.81_{-0.01}^{+0.03}$  &  $<0.01$  &  $8.11_{-0.11}^{+0.10}$  &  $10.95_{-0.58}^{+1.61}$  &  $<0.17$  \\
+04054  &  177.403393  &  22.402456  &  1.49  &  3.39 [3.04, 3.28]  &  21.27  &  $9.64_{-0.01}^{+0.05}$  &  $1.10_{-0.01}^{+0.01}$  &  $8.70_{-0.11}^{+0.09}$  &  $16.99_{-2.80}^{+5.71}$  &  $0.72_{-0.23}^{+0.23}$  \\
+05422  &  177.382077  &  22.407510  &  1.97  &  3.63 [3.11, 4.41]  &  25.05  &  $8.45_{-0.46}^{+0.15}$  &  $0.00_{-0.01}^{+0.56}$  &  $7.56_{-0.12}^{+0.16}$  &  $<38.18$  &  $<1.85$  \\
+05709  &  177.397234  &  22.406181  &  1.68  &  7.10 [6.74, 7.53]  &  25.44  &  $7.90_{-0.03}^{+0.02}$  &  $<0.01$  &  $8.21_{-0.21}^{+0.13}$  &  $<17.97$  &  $<1.18$  \\
+05732  &  177.415126  &  22.406195  &  1.68  &  1.56 [1.51, 1.61]  &  23.45  &  $9.09_{-0.01}^{+0.01}$  &  $<0.01$  &  $8.41_{-0.12}^{+0.10}$  &  $<84.70$  &  $<1.31$  \\
+05811  &  177.389220  &  22.407583  &  2.31  &  7.50 [6.88, 9.34]  &  23.79  &  $8.85_{-0.10}^{+0.11}$  &  $<0.01$  &  $8.16_{-0.21}^{+0.14}$  &  $4.94_{-2.47}^{+3.13}$  &  $<0.74$  \\
+05968  &  177.406922  &  22.407499  &  1.48  &  1.84 [1.78, 1.96]  &  22.24  &  $9.34_{-0.03}^{+0.02}$  &  $0.60_{-0.01}^{+0.20}$  &  $8.47_{-0.08}^{+0.07}$  &  $27.95_{-4.41}^{+4.70}$  &  $0.23_{-0.13}^{+0.15}$  \\
+07058  &  177.405976  &  22.412977  &  1.79  &  2.13 [1.97, 3.01]  &  24.28  &  $8.74_{-0.15}^{+0.17}$  &  $0.00_{-0.01}^{+0.12}$  &  $8.38_{-0.19}^{+0.13}$  &  $<44.99$  &  $<1.85$  \\
+07255  &  177.385990  &  22.414074  &  1.27  &  2.34 [2.31, 2.99]  &  22.47  &  $9.36_{-0.21}^{+0.01}$  &  $0.30_{-0.01}^{+0.21}$  &  $8.38_{-0.08}^{+0.08}$  &  $8.73_{-3.10}^{+3.53}$  &  $<0.79$
+\enddata
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\tablecomments{The error bars and upper/lower limits shown in the columns of SED fitting and EL diagnostics correspond
+    to 1-$\sigma$ confidence ranges. Note that the errors on the SED fitting results do not include any systematic uncertainties associated with the
+    \citet{Bruzual:2003ck} stellar population models.}
+\tablenotetext{a}{Best-fit magnification values and 1-$\sigma$ confidence intervals. Except for galaxy ID 02389, the
+magnification results are from the \glafic version 3 model, calculated by the \hff interactive online magnification
+calculator available at \url{https://archive.stsci.edu/prepds/frontier/lensmodels/webtool/magnif.html}. 
+For galaxy ID 02389, we use the \SJ version 3 model instead to compute the magnification results and correct for
+lensing magnification}
+\tablenotetext{b}{Values presented here are corrected for lensing magnification.}
+\tablenotetext{c}{The superscripts of ``S'' and ``N'' refer to the stellar and nebular V-band dust extinction in units of
+    magnitude, respectively.}
+\tablenotetext{d}{The EL diagnostic result on this source is not trustworthy, since it is classified as an AGN
+    candidate (see Sect.~\ref{sect:global}).}
+\label{tab:srcprop}
+\end{deluxetable}

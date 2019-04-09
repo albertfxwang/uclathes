@@ -1,0 +1,59 @@
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+% Include this table with \input{filename.tex}
+% To rotate in emulateapj do: \begin{turnpage}\input{filename.tex}\end{turnpage}
+% To display it on multiple pages do: \LongTables\input{filename.tex}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\begin{deluxetable}{ccccccccccccc} \tablecolumns{13}
+\tablewidth{0pt}
+\tablecaption{Measured emission line fluxes}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\tablehead{
+  \colhead{ID} &
+  \colhead{$z_{\textrm{spec}}$} &
+  \colhead{$f_{\SII}$}	&
+  \colhead{$f_{\Ha}$}	&
+  \colhead{$f_{\OIII}$}	&
+  \colhead{$f_{\Hb}$}	&
+  \colhead{$f_{\Hg}$}	&
+  \colhead{$f_{\OII}$}
+}
+%---------------------------------------------------------------
+\startdata
+01422  &  2.28  &  \nodata  &  \nodata  &  $18.08 \pm 0.60$  &  $2.98 \pm 0.61$  &  $3.60 \pm 0.86$                      &  $8.70 \pm 1.18$  \\
+02389  &  1.89  &  \nodata  &  \nodata  &  $53.24 \pm 0.66$  &  $7.51 \pm 0.70$  &  $3.65 \pm 1.25$                      &  $4.65 \pm 2.03$  \\
+02607  &  1.86  &  \nodata  &  \nodata  &  $37.86 \pm 0.65$  &  $5.59 \pm 0.83$  &  $<1.68$                              &  $4.23 \pm 1.94$  \\
+02806  &  1.50  &  $7.00 \pm 2.39$  &  $12.75 \pm 0.78$  &  $30.21 \pm 1.17$  &  $11.95 \pm 1.22$  &  $9.29 \pm 2.69$    &  $5.17 \pm 4.08$  \\
+02918  &  1.78  &  \nodata  &  \nodata  &  $22.96 \pm 1.26$  &  $8.14 \pm 1.33$  &  $2.18 \pm 1.70$                      &  $14.71 \pm 3.79$  \\
+03746  &  1.25  &  $11.69 \pm 0.77$  &  $97.29 \pm 0.81$  &  $170.40 \pm 1.39$  &  $35.00 \pm 2.18$  &  $14.93 \pm 3.29$  &  $49.40 \pm 8.37$  \\
+04054  &  1.49  &  $29.38 \pm 3.14$  &  $57.26 \pm 1.06$  &  $17.96 \pm 1.45$  &  $16.56 \pm 1.53$  &  $<5.16$            &  $34.08 \pm 5.10$  \\
+05422  &  1.97  &  \nodata  &  \nodata  &  $10.79 \pm 0.71$  &  $4.08 \pm 0.73$  &  $3.91 \pm 0.88$                      &  $1.82 \pm 1.63$  \\
+05709  &  1.68  &  \nodata  &  \nodata  &  $54.03 \pm 1.06$  &  $13.17 \pm 1.13$  &  $8.59 \pm 1.60$                      &  $18.69 \pm 3.54$  \\
+05732  &  1.68  &  \nodata  &  \nodata  &  $35.12 \pm 0.71$  &  $12.45 \pm 0.73$  &  $6.57 \pm 1.07$                      &  $22.92 \pm 2.88$  \\
+05811  &  2.31  &  \nodata  &  \nodata  &  $21.09 \pm 0.61$  &  $3.01 \pm 0.64$  &  $7.71 \pm 0.93$                      &  $7.31 \pm 1.25$  \\
+05968  &  1.48  &  $17.19 \pm 1.36$  &  $68.13 \pm 0.81$  &  $59.08 \pm 1.09$  &  $21.08 \pm 1.19$  &  $21.36 \pm 3.10$   &  $55.99 \pm 3.95$  \\
+07058  &  1.79  &  \nodata  &  \nodata  &  $12.87 \pm 0.96$  &  $3.59 \pm 0.91$  &  $3.96 \pm 1.25$                      &  $8.73 \pm 2.77$  \\
+07255\tablenotemark{a}  &  1.27  &  $11.70 \pm 1.21$  &  $37.19 \pm 0.92$  &  $41.81 \pm 2.59$  &  $21.85 \pm 4.16$  &  \nodata    &  $11.84 \pm 9.28$
+\enddata
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\tablecomments{The fluxes are observed values in unit of $10^{-17} \Funit$, not accounted for dust extinction nor lensing magnification. The flux
+    error bars denote 1-$\sigma$ measurement uncertainties. The 2-$\sigma$ upper limit is given for undetected lines.
+    Only sources at $z\leq1.5$ have \Ha and \SII line flux measurements due to the grism spectral coverage.}
+\tablenotetext{a}{The missing of \Hg flux for this source is due to grism defect.}
+\label{tab:ELflux}
+\end{deluxetable}
+
+%  \colhead{$f_{\NeIII}$}	&
+%&  $5.70 \pm 1.09$ 
+%&  $3.66 \pm 1.44$ 
+%&  $6.02 \pm 1.23$ 
+%&  $8.28 \pm 3.56$ 
+%&  $7.05 \pm 3.62$ 
+%&  $22.65 \pm 6.41$
+%&  $18.74 \pm 4.31$
+%&  $2.65 \pm 1.34$ 
+%&  $17.85 \pm 3.15$
+%&  $14.40 \pm 2.63$
+%&  $4.29 \pm 1.53$ 
+%&  $12.86 \pm 3.37$
+%&  $3.33 \pm 2.62$ 
+%&  $29.65 \pm 7.14$

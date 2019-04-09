@@ -1,0 +1,299 @@
+
+
+In [3]: reload(plotELparams)
+Out[3]: <module 'exe.plotELobjparams' from '/home/albert/Dropbox/Python/exe/plotELobjparams.pyc'>
+
+In [5]: run plotELfig_paperIVrevis.py
+     fixed bin number = 30  =>  obtain bin size = 1.35241e-02
+ >   final report on statistics about the input data: 
+ >   min = -1.50276e-01, mode = -1.50352e-02, max = 2.41922e-01
+     set y-axis flux limit to be [-0.1773,0.2811] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 4.74900e-03
+     NOTE: the mode cnt rate = 33, does not pass the cut = 52.4, use the mean point = 0.00230261857945 instead
+ >   final report on statistics about the input data: 
+ >   min = -6.15590e-02, mode = 2.30262e-03, max = 7.61620e-02
+     set y-axis flux limit to be [-0.0727,0.0883] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 4.84660e-02
+ >   final report on statistics about the input data: 
+ >   min = 1.76047e-02, mode = 1.76047e-02, max = 1.42312e+00
+     set y-axis flux limit to be [-0.0309,1.0499] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 3.05747e-02
+ >   final report on statistics about the input data: 
+ >   min = 8.12189e-03, mode = 8.12189e-03, max = 8.94787e-01
+     set y-axis flux limit to be [-0.0225,0.9254] using _findOptimal1Drange_
+     set imshow vim and vmax to be [-0.0033,0.0154] using YTRACE
+     set imshow vim and vmax to be [-0.0051,0.0205] using YTRACE
+     set imshow vim and vmax to be [-0.0055,0.0043] using YTRACE
+     set imshow vim and vmax to be [-0.0056,0.0087] using YTRACE
+ Finish plotting clA2744_id963_pa233_zsQ4.png
+
+
+In [6]: reload(plotELparams)
+Out[6]: <module 'exe.plotELobjparams' from '/home/albert/Dropbox/Python/exe/plotELobjparams.py'>
+
+In [7]: run plotELfig_paperIVrevis.py
+     fixed bin number = 30  =>  obtain bin size = 1.12742e-02
+ >   final report on statistics about the input data: 
+ >   min = -1.15879e-01, mode = -3.13652e-03, max = 2.11074e-01
+     set y-axis flux limit to be [-0.1384,0.2438] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 4.47608e-03
+     NOTE: the mode cnt rate = 34, does not pass the cut = 51.2, use the mean point = -0.0128050704899 instead
+ >   final report on statistics about the input data: 
+ >   min = -6.43280e-02, mode = -1.28051e-02, max = 6.54784e-02
+     set y-axis flux limit to be [-0.0740,0.0778] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 3.57326e-03
+ >   final report on statistics about the input data: 
+ >   min = 1.30256e-02, mode = 1.30256e-02, max = 1.16650e-01
+     set y-axis flux limit to be [0.0095,0.1202] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 3.18173e-03
+ >   final report on statistics about the input data: 
+ >   min = 4.37719e-03, mode = 4.37719e-03, max = 9.66473e-02
+     set y-axis flux limit to be [0.0012,0.0998] using _findOptimal1Drange_
+     set imshow vim and vmax to be [-0.0015,0.0051] using YTRACE
+     set imshow vim and vmax to be [-0.0077,0.0098] using YTRACE
+     set imshow vim and vmax to be [-0.0019,0.0047] using YTRACE
+     set imshow vim and vmax to be [-0.0082,0.0094] using YTRACE
+     add patch center at 9540 with radius 90 in Angstrom to 1D spectrum
+     patch center at 9540 out of range of current Grism [11000, 17000] in Angstrom
+     add patch center at 9540 with radius 90 in Angstrom to 2D spectrum
+     patch center at 9540 out of range of current Grism [11000, 17000] in Angstrom
+     add patch center at 9540 with radius 90 in Angstrom to 2D spectrum
+     patch center at 9540 out of range of current Grism [11000, 17000] in Angstrom
+ Finish plotting clA2744_id963_pa135_zsQ4.png
+
+
+In [8]: reload(plotELparams)
+Out[8]: <module 'exe.plotELobjparams' from '/home/albert/Dropbox/Python/exe/plotELobjparams.py'>
+
+In [9]: run plotELfig_paperIVrevis.py
+     fixed bin number = 30  =>  obtain bin size = 1.13923e-02
+     NOTE: the mode cnt rate = 42, does not pass the cut = 57.0, use the mean point = 0.0349742565653 instead
+ >   final report on statistics about the input data: 
+ >   min = -1.28374e-01, mode = 3.49743e-02, max = 2.02004e-01
+     set y-axis flux limit to be [-0.1398,0.2134] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 5.35432e-03
+     NOTE: the mode cnt rate = 35, does not pass the cut = 51.4, use the mean point = 0.0173009062577 instead
+ >   final report on statistics about the input data: 
+ >   min = -4.62725e-02, mode = 1.73009e-02, max = 1.09003e-01
+     set y-axis flux limit to be [-0.0707,0.1419] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 4.75852e-02
+ >   final report on statistics about the input data: 
+ >   min = 2.65496e-02, mode = 2.65496e-02, max = 1.40652e+00
+     set y-axis flux limit to be [-0.0210,1.1781] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 2.03729e-02
+ >   final report on statistics about the input data: 
+ >   min = 1.69985e-02, mode = 1.69985e-02, max = 6.07814e-01
+     set y-axis flux limit to be [-0.0034,0.5691] using _findOptimal1Drange_
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [0.0009,0.0095] using YTRACE
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [0.0001,0.0237] using YTRACE
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [-0.0010,0.0060] using input
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [-0.0010,0.0120] using input
+ Finish plotting clA2744_id888_pa233_zsQ3.png
+
+
+In [10]: reload(plotELparams)
+Out[10]: <module 'exe.plotELobjparams' from '/home/albert/Dropbox/Python/exe/plotELobjparams.py'>
+In [11]: run plotELfig_paperIVrevis.py
+     fixed bin number = 30  =>  obtain bin size = 2.13964e-02
+     NOTE: the mode cnt rate = 55, does not pass the cut = 56.4, use the mean point = -0.0555455307185 instead
+ >   final report on statistics about the input data: 
+ >   min = -5.27702e-01, mode = -5.55455e-02, max = 9.27926e-02
+     set y-axis flux limit to be [-0.5255,0.1068] using _findOptimal1Drange_
+     set y-axis flux limit to be [-0.0350,0.0700] using input
+     set y-axis flux limit to be [0.0000,1.0000] using input
+     fixed bin number = 30  =>  obtain bin size = 3.40767e-02
+ >   final report on statistics about the input data: 
+ >   min = 6.61687e-02, mode = 6.61687e-02, max = 1.05439e+00
+     set y-axis flux limit to be [0.0321,1.0885] using _findOptimal1Drange_
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [0.0029,0.0134] using YTRACE
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [0.0032,0.0253] using YTRACE
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [-0.0046,0.0017] using YTRACE
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [-0.0040,0.0100] using input
+ Finish plotting clA2744_id888_pa135_zsQ3.png
+
+In [12]: reload(plotELparams)
+Out[12]: <module 'exe.plotELobjparams' from '/home/albert/Dropbox/Python/exe/plotELobjparams.py'>
+In [13]: run plotELfig_paperIVrevis.py
+     fixed bin number = 30  =>  obtain bin size = 1.74653e-02
+     NOTE: the mode cnt rate = 53, does not pass the cut = 58.4, use the mean point = -0.0150627892549 instead
+ >   final report on statistics about the input data: 
+ >   min = -4.05111e-01, mode = -1.50628e-02, max = 1.01381e-01
+     set y-axis flux limit to be [-0.2276,0.1421] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 6.27672e-03
+     NOTE: the mode cnt rate = 50, does not pass the cut = 52.2, use the mean point = -0.000806048697908 instead
+ >   final report on statistics about the input data: 
+ >   min = -1.05783e-01, mode = -8.06049e-04, max = 7.62424e-02
+     set y-axis flux limit to be [-0.1016,0.1056] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 5.16085e-02
+ >   final report on statistics about the input data: 
+ >   min = 5.92809e-02, mode = 5.92809e-02, max = 1.55593e+00
+     set y-axis flux limit to be [0.0077,1.9069] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 2.62556e-02
+     NOTE: the mode cnt rate = 49, does not pass the cut = 52.2, use the mean point = 0.228994043566 instead
+ >   final report on statistics about the input data: 
+ >   min = 7.32439e-02, mode = 2.28994e-01, max = 8.34655e-01
+     set y-axis flux limit to be [0.0158,0.9820] using _findOptimal1Drange_
+     set imshow vim and vmax to be [-0.0038,0.0197] using YTRACE
+     set imshow vim and vmax to be [-0.0040,0.0637] using YTRACE
+     set imshow vim and vmax to be [-0.0071,0.0061] using YTRACE
+     set imshow vim and vmax to be [-0.0147,0.0139] using YTRACE
+ Finish plotting clA2744_id523_pa233_zsQ4.png
+
+
+In [14]: reload(plotELparams)
+Out[14]: <module 'exe.plotELobjparams' from '/home/albert/Dropbox/Python/exe/plotELobjparams.py'>
+
+In [15]: run plotELfig_paperIVrevis.py
+     fixed bin number = 30  =>  obtain bin size = 1.08760e-02
+     NOTE: the mode cnt rate = 46, does not pass the cut = 56.2, use the mean point = 0.0155626811591 instead
+ >   final report on statistics about the input data: 
+ >   min = -8.30551e-02, mode = 1.55627e-02, max = 2.32348e-01
+     set y-axis flux limit to be [-0.1038,0.2649] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 5.37906e-03
+     NOTE: the mode cnt rate = 35, does not pass the cut = 50.6, use the mean point = 0.0177540783464 instead
+ >   final report on statistics about the input data: 
+ >   min = -4.98500e-02, mode = 1.77541e-02, max = 1.06143e-01
+     set y-axis flux limit to be [-0.0620,0.1204] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 4.08740e-02
+ >   final report on statistics about the input data: 
+ >   min = 1.57290e-01, mode = 1.57290e-01, max = 1.34264e+00
+     set y-axis flux limit to be [0.1164,1.3835] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 2.20816e-02
+     NOTE: the mode cnt rate = 47, does not pass the cut = 50.6, use the mean point = 0.201294071627 instead
+ >   final report on statistics about the input data: 
+ >   min = 6.63240e-02, mode = 2.01294e-01, max = 7.06690e-01
+     set y-axis flux limit to be [0.0442,0.7288] using _findOptimal1Drange_
+     set imshow vim and vmax to be [-0.0023,0.0191] using YTRACE
+     set imshow vim and vmax to be [-0.0003,0.0445] using YTRACE
+     set imshow vim and vmax to be [-0.0061,0.0046] using YTRACE
+     set imshow vim and vmax to be [-0.0087,0.0167] using YTRACE
+ Finish plotting clA2744_id523_pa135_zsQ4.png
+
+
+In [16]: reload(plotELparams)
+Out[16]: <module 'exe.plotELobjparams' from '/home/albert/Dropbox/Python/exe/plotELobjparams.py'>
+
+In [17]: run plotELfig_paperIVrevis.py
+     set y-axis flux limit to be [-0.3500,0.4000] using input
+     fixed bin number = 30  =>  obtain bin size = 4.94930e-03
+     NOTE: the mode cnt rate = 28, does not pass the cut = 51.8, use the mean point = -0.00093240846158 instead
+ >   final report on statistics about the input data: 
+ >   min = -5.14440e-02, mode = -9.32408e-04, max = 9.20858e-02
+     set y-axis flux limit to be [-0.0614,0.1063] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 7.20075e-02
+ >   final report on statistics about the input data: 
+ >   min = 1.96452e-01, mode = 2.68460e-01, max = 2.28467e+00
+     set y-axis flux limit to be [0.1244,2.3567] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 3.79285e-02
+ >   final report on statistics about the input data: 
+ >   min = 5.34649e-02, mode = 5.34649e-02, max = 1.15339e+00
+     set y-axis flux limit to be [0.0155,1.1913] using _findOptimal1Drange_
+     set imshow vim and vmax to be [0.0004,0.0265] using YTRACE
+     set imshow vim and vmax to be [-0.0012,0.0389] using YTRACE
+     set imshow vim and vmax to be [-0.0330,0.0134] using YTRACE
+     set imshow vim and vmax to be [-0.0072,0.0158] using YTRACE
+ Finish plotting clA2744_id433_pa233_zsQ4.png
+
+
+In [18]: reload(plotELparams)
+Out[18]: <module 'exe.plotELobjparams' from '/home/albert/Dropbox/Python/exe/plotELobjparams.py'>
+
+In [19]: run plotELfig_paperIVrevis.py
+     fixed bin number = 30  =>  obtain bin size = 9.84768e-03
+ >   final report on statistics about the input data: 
+ >   min = -1.53937e-01, mode = -6.22233e-03, max = 1.31645e-01
+     set y-axis flux limit to be [-0.1786,0.1553] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 4.89493e-03
+     NOTE: the mode cnt rate = 38, does not pass the cut = 50.6, use the mean point = -0.000623588391975 instead
+ >   final report on statistics about the input data: 
+ >   min = -6.67018e-02, mode = -6.23588e-04, max = 7.52512e-02
+     set y-axis flux limit to be [-0.0782,0.0877] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 1.79575e-02
+ >   final report on statistics about the input data: 
+ >   min = 7.38828e-02, mode = 9.18403e-02, max = 5.94651e-01
+     set y-axis flux limit to be [0.0559,0.6126] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 1.86776e-02
+ >   final report on statistics about the input data: 
+ >   min = 3.68045e-02, mode = 3.68045e-02, max = 5.78455e-01
+     set y-axis flux limit to be [0.0181,0.5971] using _findOptimal1Drange_
+     set imshow vim and vmax to be [-0.0012,0.0191] using YTRACE
+     set imshow vim and vmax to be [-0.0059,0.0574] using YTRACE
+     set imshow vim and vmax to be [-0.0052,0.0022] using YTRACE
+     set imshow vim and vmax to be [-0.0211,0.0265] using YTRACE
+ Finish plotting clA2744_id433_pa135_zsQ4.png
+
+
+In [20]: reload(plotELparams)
+Out[20]: <module 'exe.plotELobjparams' from '/home/albert/Dropbox/Python/exe/plotELobjparams.py'>
+
+In [21]: run plotELfig_paperIVrevis.py
+     set y-axis flux limit to be [-1.3500,0.3000] using input
+     fixed bin number = 30  =>  obtain bin size = 1.08873e-02
+     NOTE: the mode cnt rate = 43, does not pass the cut = 51.8, use the mean point = -0.0243654406737 instead
+ >   final report on statistics about the input data: 
+ >   min = -1.64735e-01, mode = -2.43654e-02, max = 1.50997e-01
+     set y-axis flux limit to be [-0.1616,0.1443] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 2.53312e-01
+ >   final report on statistics about the input data: 
+ >   min = 4.11952e-01, mode = 6.65264e-01, max = 7.75800e+00
+     set y-axis flux limit to be [0.1080,9.4299] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 5.41715e-02
+ >   final report on statistics about the input data: 
+ >   min = 1.23808e-01, mode = 1.23808e-01, max = 1.69478e+00
+     set y-axis flux limit to be [0.0696,2.0631] using _findOptimal1Drange_
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [0.0004,0.0382] using YTRACE
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [0.0048,0.0504] using YTRACE
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [-0.0307,0.0051] using YTRACE
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [-0.0037,0.0066] using YTRACE
+     patch center at 14380 out of range of current Grism [8000, 11500] in Angstrom
+     add patch center at 14380 with radius 90 in Angstrom to 1D spectrum
+     patch center at 14380 out of range of current Grism [8000, 11500] in Angstrom
+     add patch center at 14380 with radius 90 in Angstrom to 2D spectrum
+     patch center at 14380 out of range of current Grism [8000, 11500] in Angstrom
+     add patch center at 14380 with radius 90 in Angstrom to 2D spectrum
+ Finish plotting clA2744_id336_pa233_zsQ3.png
+
+In [22]: reload(plotELparams)
+Out[22]: <module 'exe.plotELobjparams' from '/home/albert/Dropbox/Python/exe/plotELobjparams.py'>
+
+In [23]: run plotELfig_paperIVrevis.py
+     fixed bin number = 30  =>  obtain bin size = 1.26952e-02
+     NOTE: the mode cnt rate = 35, does not pass the cut = 55.8, use the mean point = -0.0173365827207 instead
+ >   final report on statistics about the input data: 
+ >   min = -2.65167e-01, mode = -1.73366e-02, max = 1.02993e-01
+     set y-axis flux limit to be [-0.2283,0.1157] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 8.81517e-03
+     NOTE: the mode cnt rate = 33, does not pass the cut = 50.6, use the mean point = -3.89562003823e-05 instead
+ >   final report on statistics about the input data: 
+ >   min = -1.56152e-01, mode = -3.89562e-05, max = 9.94876e-02
+     set y-axis flux limit to be [-0.1337,0.1183] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 1.20898e-01
+ >   final report on statistics about the input data: 
+ >   min = 1.08840e-01, mode = 1.08840e-01, max = 3.61489e+00
+     set y-axis flux limit to be [-0.0121,4.0864] using _findOptimal1Drange_
+     fixed bin number = 30  =>  obtain bin size = 6.01127e-02
+ >   final report on statistics about the input data: 
+ >   min = 6.66772e-02, mode = 1.26790e-01, max = 1.80995e+00
+     set y-axis flux limit to be [0.0066,1.8701] using _findOptimal1Drange_
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [0.0016,0.0348] using YTRACE
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [0.0019,0.0441] using YTRACE
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [-0.0019,0.0010] using YTRACE
+     smooth using Gaussian filter with sigma=2
+     set imshow vim and vmax to be [-0.0025,0.0095] using YTRACE
+ Finish plotting clA2744_id336_pa135_zsQ3.png
+

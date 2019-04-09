@@ -1,0 +1,34 @@
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+% Include this table with \input{filename.tex}
+% To rotate in emulateapj do: \begin{turnpage}\input{filename.tex}\end{turnpage}
+% To display it on multiple pages do: \LongTables\input{filename.tex}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\begin{deluxetable}{ccccccccccccc} \tablecolumns{13}
+\tablewidth{0pt}
+\tablecaption{Coefficients for the EL flux ratio diagnostics used in our Bayesian inference.}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\tablehead{
+    \colhead{$R$} & 
+    \colhead{$c_0$} &
+    \colhead{$c_1$} &
+    \colhead{$c_2$} &
+    \colhead{$c_3$} &
+    \colhead{$c_4$} &
+    \colhead{$c_5$}
+}
+%---------------------------------------------------------------
+\startdata
+\Ha/\Hb     &  0.4564 & \nodata & \nodata & \nodata & \nodata & \nodata \\
+\Hg/\Hb     & -0.3279 & \nodata & \nodata & \nodata & \nodata & \nodata \\
+\OIII/\Hb   &  0.1549 & -1.5031 & -0.9790 & -0.0297 & \nodata & \nodata \\
+\OII/\Hb    &  0.5603 &  0.0450 & -1.8017 & -1.8434 & -0.6549 & \nodata \\
+%\NeIII/\OII & -1.2608 & -1.0861 & -0.1470 & \nodata & \nodata & \nodata \\
+\SII/\Ha    & -0.5457 &  0.4573 & -0.8227 & -0.0284 &  0.5940 &  0.3426
+\enddata
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\tablecomments{The value of EL flux ratio is calculated by the polynomial functional form,
+\ie, $\log{R} = \sum_{i=0}^{5}c_i\cdot x^i$, where $x=\oh-8.69$. The ratio of \SII/\Ha is
+calibrated by the work of \citet{2015ApJ...813..126J}, and the Balmer line ratios correspond
+to the Balmer decrement, whereas the ratios between oxygen lines and \Hb are from M08.}
+\label{tab:ELratioCoef}
+\end{deluxetable}

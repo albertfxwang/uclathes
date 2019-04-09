@@ -1,0 +1,73 @@
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+% Include this table with \input{filename.tex}
+% To rotate in emulateapj do: \begin{turnpage}\input{filename.tex}\end{turnpage}
+% To display it on multiple pages do: \LongTables\input{filename.tex}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+%\tabcolsep=0.4cm
+%\begin{deluxetable*}{lp{2cm}p{2cm}cccccccccccc}
+\begin{deluxetable}{lcccccccccccc}
+    \tablecolumns{13}
+    \tablewidth{0pt}
+%    \tabletypesize{\footnotesize}
+    \tablecaption{Measured quantities of the two dwarf galaxies\label{tab:srcprop}}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\tablehead{
+    \colhead{ID}  &     \colhead{03751}     &       \colhead{01203}
+}
+%---------------------------------------------------------------
+\startdata
+    cluster         &       \clsan      &       \clba      \\
+    R.A. (deg.)     &       39.977361   &       116.197585  \\
+    Decl. (deg.)    &       -1.591636   &       39.456698   \\
+    $z_{\rm spec}$  &       1.96        &       1.65       \\
+    $\mu$~\tablenotemark{a}     &      6.35$_{-0.58}^{+0.40}$      &       2.25$_{-0.03}^{+0.04}$  \\
+    \hline\noalign{\smallskip}
+    \multicolumn{3}{c}{Observed emission line fluxes}   \\
+    $f_{\OIII}$~[$10^{-17}$\Funit]     &  111.41$\pm$0.84   &   117.66$\pm$1.17 \\
+    $f_{\Hb}$~[$10^{-17}$\Funit]       &   17.68$\pm$0.68    &   17.46$\pm$1.06    \\
+    $f_{\OII}$~[$10^{-17}$\Funit]      &   29.57$\pm$0.51    &   34.00$\pm$0.96    \\
+    $f_{\Hg}$~[$10^{-17}$\Funit]       &    7.21$\pm$0.67     &   7.06$\pm$1.00   \\
+    \hline\noalign{\smallskip}
+    \multicolumn{3}{c}{Restframe equivalent widths}   \\
+    EW$_{\OIII}$~[\AA]     &  466.22$\pm$3.52    &   797.14$\pm$7.95   \\
+    EW$_{\Hb}$~[\AA]       &   73.98$\pm$2.83    &   118.29$\pm$7.18   \\
+    EW$_{\OII}$~[\AA]      &   79.14$\pm$1.37    &   123.91$\pm$3.50   \\
+    EW$_{\Hg}$~[\AA]       &   30.18$\pm$2.82    &    25.73$\pm$3.68    \\
+    \hline\noalign{\smallskip}
+    \multicolumn{3}{c}{Estimated physical parameters}   \\
+    \Mstar[10$^9$\Msun]\tablenotemark{b} &      1.12$_{-0.14}^{+0.14}$      &       2.55$_{-0.04}^{+0.04}$  \\
+    \oh\tablenotemark{c}   &       8.08$_{-0.12}^{+0.11}$  &       8.10$_{-0.11}^{+0.11}$          \\
+    $\Delta\log({\rm O/H})/\Delta r$~[dex/kpc]    &    0.122$\pm$0.008    &       0.111$\pm$0.017     \\
+    \SFR[\Msunyr]\tablenotemark{b}       &   25.39$\pm$2.19      &       48.86$\pm$3.04     \\
+    \Av             &       0.84$\pm$0.13           &       0.90$\pm$0.16                   \\
+    \tage[$10^7$ yrs]      &   7.93$\pm$0.88     &       3.98$\pm$0.51     \\
+    \Mgas[10$^{9}$\Msun]\tablenotemark{b}    &   4.07$\pm$1.27   &       23.85$\pm$7.33       \\
+    \fgas\tablenotemark{d}           &       0.56$\pm$0.20   &       0.86$\pm$0.13       \\
+    $B/T$\tablenotemark{e}  &       0.36$\pm$0.14   &       0.14$\pm$0.07       \\
+    $R_{\rm eff}$ [kpc]\tablenotemark{b}  &   1.53$\pm$0.12    &   1.66$\pm$0.17     \\
+    \hline\noalign{\smallskip}
+    \multicolumn{3}{c}{Gas kinematics}   \\
+    $\sigma$~[km/s]     &   \nodata\tablenotemark{f}     &   73$\pm$3    \\
+    $V/\sigma$      &   \nodata\tablenotemark{f}     &   1.3$\pm$0.1 \\
+    \hline\noalign{\smallskip}
+    \multicolumn{3}{c}{Measurements of the gaseous outflows at the central 1\kpc}   \\
+    $\lambda$  &  49.9$\pm$14.7   &   52.1$\pm$20.2     \\
+    $\Psi$~[\Msunyr]   &  311.3$\pm$96.2   &   1700.9$\pm$681.9
+\enddata
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    \tablenotetext{a}{The magnification estimates are obtained from the \SJ version 4 model of \clsan\citep{Johnson:2014cf} and the
+    Zitrin PIEMD+eNFW version 2 model of \clba\citep{2015ApJ...801...44Z}, for the two sources respectively.}
+    \tablenotetext{b}{Values presented here are corrected for lensing magnification.}
+    \tablenotetext{c}{Values represent global metallicity, inferred from integrated line fluxes.}
+    \tablenotetext{d}{Here the gas fraction is calculated according to Eq.~\ref{eq:fgas}, using
+    surface densities of the stellar and gas components, the latter of which is given by inverting the extended
+    Schmidt law (Eq.~\ref{eq:KSlaw}) and the former from spatially resolved SED fitting.
+    We caution that stellar mass estimates from resolved photometry can be systematically higher (by factors of
+    up to 5) than spatially unresolved photometry, as elaborated in \citet{Sorba:2018hd}.
+    }
+    \tablenotetext{e}{In the bulge-disk decomposition, we fix the \sersic index $n=4$ (\ie de Vaucouleurs) for the bulge
+    component, and $n=1$ (\ie exponential) for the disk component.}
+    \tablenotetext{f}{Ground-based \keck OSIRIS follow-up observations targetting \Ha or \OIII gas kinematics for this source are 
+    not feasible due to significantly low atmospheric transmission at the corresponding wavelengths.}
+\end{deluxetable}
+

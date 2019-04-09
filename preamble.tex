@@ -2,12 +2,32 @@
 %%<<141022>> merged the beamer version and the manu version together and re-locate it at latex_refs/
 %%<<190330>> adapted for my thesis. Need to add the following line to bibtex. see: https://tex.stackexchange.com/questions/365215/natbib-newblock-undefined-error-with-informs3-document-class
 \newcommand{\newblock}{}
+\newcommand{\rm}{\mathrm}
+\newcommand{\bf}{\textbf}
+
+\newcommand{\NimgTOT}{179}   %number of TOTal identified arc images
+\newcommand{\NsysTOT}{57}   %number of TOTal identified arc systems
+\newcommand{\NimgUSE}{72}   %number of USEd in model arc images
+\newcommand{\NsysUSE}{25}   %number of USEd in model arc systems
+\newcommand{\NimgELtot}{7}  %number of arc images showing emission lines with quality > 1
+\newcommand{\NsysELtot}{5}   %number of arc systems showing emission lines with quality > 1
+\newcommand{\NimgELhiQ}{5}   %number of arc images showing high-quality (3 or 4) emission lines  <=>  z_spec confirmed
+\newcommand{\NsysELhiQ}{3}   %number of arc systems showing high-quality (3 or 4) emission lines  <=>  z_spec confirmed
+\newcommand{\NELobjsQhi}{55}    %number of all the ELobjs with quality 3 or 4, including the \NimgELhiQ{} arcs
+\newcommand{\NELQone}{2}        %number of singly lensed ELobjs with quality 1
+\newcommand{\NELQtwo}{18}       %number of singly lensed ELobjs with quality 2
+\newcommand{\NELQthree}{16}     %number of singly lensed ELobjs with quality 3
+\newcommand{\NELQfour}{34}      %number of singly lensed ELobjs with quality 4
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% packages and settings useful globally
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\usepackage[utf8]{inputenc} % useful to type directly diacritic characters
-\usepackage{graphicx}       % you can specify [driver] (e.g. [pdftex]) which is the dvi to postscript program
+\usepackage[english]{babel} % default (American) English hyphenation
+\usepackage[utf8]{inputenc} % useful to type directly diacritic characters
+\usepackage[T1]{fontenc}    % Use vector fonts, so it zooms properly in on-screen viewing software
+\usepackage{ae,aecompl}
+\usepackage{graphicx}       % allows the usage of ``includegraphics''
 \usepackage{natbib}         % enables the use of \citep and others; see http://merkel.zoneo.net/Latex/natbib.php
 \usepackage{url}            % enables the use of url web links
 \urlstyle{rm}
@@ -21,9 +41,10 @@
 \usepackage{multirow}       % enables the use of \multirow{num}{*}{text} in deluxetable
 \usepackage{xspace}         % enables the use of \xspace in defining macros
 %\usepackage{epstopdf}
-%\usepackage{ccaption}       % continuation of caption for figures containing multiple floats
+\usepackage{ccaption}       % continuation of caption for figures containing multiple floats
 \usepackage{amsmath,amssymb,amsxtra,amsfonts}   % to use pmatrix, etc.
 \usepackage{txfonts}
+\usepackage{deluxetable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% special packages and corresponding usages
@@ -105,11 +126,11 @@
 %%%% only necessary for emulateapj
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % - - - - - - - - already defined
-%\newcommand\farcs{\mbox{$.\!^{\prime\prime}$}}    % arcsec with a decimal point in front
-%\newcommand\farcm{\mbox{$.\mkern-4mu^\prime$}}      % arcmin with a decimal point in front
-%\newcommand{\arcsec}{\mbox{$\!^{\prime\prime}$}\xspace}  % the unit of arcsec
-%\newcommand{\arcmin}{\mbox{$\!^{\prime}$}\xspace}          % the unit of arcmin
-%\newcommand{\arcdeg}{\mbox{$^{\circ}$}\xspace}             % the unit of arcdeg
+\newcommand\farcs{\mbox{$.\!^{\prime\prime}$}}    % arcsec with a decimal point in front
+\newcommand\farcm{\mbox{$.\mkern-4mu^\prime$}}      % arcmin with a decimal point in front
+\newcommand{\arcsec}{\mbox{$\!^{\prime\prime}$}\xspace}  % the unit of arcsec
+\newcommand{\arcmin}{\mbox{$\!^{\prime}$}\xspace}          % the unit of arcmin
+\newcommand{\arcdeg}{\mbox{$^{\circ}$}\xspace}             % the unit of arcdeg
 % - - - - - - - - have to comment off when using emulateapj
 \usepackage{marvosym}
 

@@ -3,6 +3,7 @@
 
 \input{preamble}                         % personal LaTeX macros
 \input{ctx}
+\input{journal_def}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -69,7 +70,10 @@
 % Ordinarily each chapter (at least) is in a separate file.
 %
 \input{include/introduction}          % Chapter 1 of dissertation: intro
-\input{include/invertedGrad}          % Chapter 2
+\input{include/abell2744}             % Chapter 2
+\input{include/macs0717}              % Chapter 3
+\input{include/macs1149}              % Chapter 4
+\input{include/invertedGrad}          % Chapter 5
 %\input {chapter3}
 %\input {chapter4}
 %\input {chapter5}
@@ -77,9 +81,13 @@
 %\input {chapter7}
 %\input {chapter8}
 
+\appendix
+\input{include/pyLensfix}
+%\input{include/grism2Dspec}
+%\input{include/gaskinem}
 
 \bibliographystyle{modapj}
-\bibliography{bibtexlib}
+\bibliography{bibtexlibmerge}
 
 \end{document}
 

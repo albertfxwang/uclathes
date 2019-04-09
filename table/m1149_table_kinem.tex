@@ -1,0 +1,32 @@
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+% Include this table with \input{filename.tex}
+% To rotate in emulateapj do: \begin{turnpage}\input{filename.tex}\end{turnpage}
+% To display it on multiple pages do: \LongTables\input{filename.tex}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\begin{deluxetable}{ccccccccccccc} \tablecolumns{13}
+\tablewidth{0pt}
+\tablecaption{Measured velocity dispersions using ground-based IFU data.}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\tablehead{
+    \colhead{ID} & 
+    \colhead{log(\Mstar\tablenotemark{a}/\Msun)} &
+    \colhead{Instrument} &
+    \colhead{Emission feature} & 
+    \colhead{$\sigma_{\rm obs}$\tablenotemark{b} (\kms)} & 
+    \colhead{$\sigma_{\rm int}$\tablenotemark{c} (\kms)}
+}
+%---------------------------------------------------------------
+\startdata
+02389  & $8.43_{-0.07}^{+0.06}$ & \muse  & \CIII  & $63\pm4$  & $19^{+11}_{-19}$  \\
+02806  & $8.72_{-0.01}^{+0.19}$ & \muse  & \OII   & $42\pm3$  & $24\pm5$  \\
+03746  & $8.81_{-0.01}^{+0.03}$ & \muse  & \OII   & $74\pm9$  & $63^{+10}_{-11}$  \\
+04054  & $9.64_{-0.01}^{+0.05}$ & \muse  & \OII   & $68\pm6$  & $59\pm7$  \\
+05709  & $7.90_{-0.03}^{+0.02}$ & \kmos  & \OIII  & $41\pm7$  & $17^{+13}_{-17}$  \\
+05968  & $9.34_{-0.03}^{+0.02}$ & \kmos  & \OIII  & $85\pm6$  & $76\pm7$
+\enddata
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\tablenotetext{a}{Values taken from Table~\ref{tab:srcprop}.}
+\tablenotetext{b}{Not corrected for instrument resolution}
+\tablenotetext{c}{Corrected intrinsic velocity dispersion}
+\label{tab:kinem}
+\end{deluxetable}

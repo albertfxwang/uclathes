@@ -1,0 +1,31 @@
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+% Include this table with \input{filename.tex}
+% To rotate in emulateapj do: \begin{turnpage}\input{filename.tex}\end{turnpage}
+% To display it on multiple pages do: \LongTables\input{filename.tex}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{\setlength\tabcolsep{2pt}
+\begin{deluxetable}{llclccccccccc} \tablecolumns{13}
+\tablewidth{0pt}
+\tablecaption{Sampling parameters and their prior information.}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\tablehead{
+    \colhead{Set} &
+    \colhead{Parameter} &
+    \colhead{Symbol (Unit)} &
+    \colhead{Prior}
+}
+%---------------------------------------------------------------
+\startdata
+Vanilla & \gpm & \oh & flat: $[7.0,9.3]$ \\
+        & nebular dust extinction & $\Av^{\rm N}$ & flat: $[0,4]$ \\
+        & de-reddened \Hb flux & $f_{\Hb}$ ($10^{-17}$\Funit) & Jeffrey's: $[0,100]$ \\
+\hline\smallskip
+Extended & \NII to \Ha flux ratio & \NII/\Ha & Jeffrey's: [0, 0.5] \\
+\hline
+Derived & \sfr &  SFR (\Msun/yr) &  ---
+\enddata
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\tablecomments{Most constraints presented in this work are obtained under the ``Vanilla'' parameter set with the extended
+parameter fixed as \NII/\Ha=0.05.}
+\label{tab:param}
+\end{deluxetable}

@@ -1,0 +1,37 @@
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+% Include this table with \input{filename.tex}
+% To rotate in emulateapj do: \begin{turnpage}\input{filename.tex}\end{turnpage}
+% To display it on multiple pages do: \LongTables\input{filename.tex}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+{\setlength\tabcolsep{2pt}
+\begin{deluxetable}{cccp{2.5cm}ccccccccc} \tablecolumns{13}
+\tablewidth{0pt}
+\tablecaption{Properties of the grism spectroscopic data used in this work}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\tablehead{
+    \colhead{PA\tablenotemark{a}} &
+    \colhead{Grism} &
+    \colhead{Exposure Time} &
+    \colhead{Program}  &
+    \colhead{Time of completion}\\
+    \colhead{(deg.)} & & 
+    \colhead{(s)} & & &
+}
+%---------------------------------------------------------------
+\startdata
+\multirow{2}{*}{032}    & G102 & 8723 & \glass & \multirow{2}{*}{Feburary 2014} \\
+                        & G141 & 4412 & \glass  \\
+111                     & G141 & 36088 & SN Refsdal follow-up & December 2014 \\
+119                     & G141 & 36088 & SN Refsdal follow-up & January 2015 \\
+\multirow{2}{*}{125}    & G102 & 8623 & \glass & \multirow{2}{*}{November 2014} \\
+                        & G141 & 4412 & \glass
+\enddata
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\tablecomments{Here we only include the grism observations targetted on the prime field of
+\clsan.}
+\tablenotetext{a}{The position angle shown here corresponds to the ``PA\_V3'' value
+    reported in the WFC3/IR image headers. The position angle of the dispersion axis of the
+grism spectra is given by $\mathrm{PA_{disp}} \approx \mathrm{PA\_V3} - 45$.}
+\label{tab:obsdata}
+\end{deluxetable}
+}
