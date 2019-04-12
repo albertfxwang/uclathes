@@ -2,8 +2,17 @@
 %%<<141022>> merged the beamer version and the manu version together and re-locate it at latex_refs/
 %%<<190330>> adapted for my thesis. Need to add the following line to bibtex. see: https://tex.stackexchange.com/questions/365215/natbib-newblock-undefined-error-with-informs3-document-class
 \newcommand{\newblock}{}
-\newcommand{\rm}{\mathrm}
-\newcommand{\bf}{\textbf}
+
+%-------------- declare old font command, see
+%               https://tex.stackexchange.com/questions/304311/is-there-any-reason-not-to-use-let-to-redefine-a-deprecated-control-sequence-to
+\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
+\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+\DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
+\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
+\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
+
 
 \newcommand{\NimgTOT}{179}   %number of TOTal identified arc images
 \newcommand{\NsysTOT}{57}   %number of TOTal identified arc systems
@@ -45,6 +54,7 @@
 \usepackage{amsmath,amssymb,amsxtra,amsfonts}   % to use pmatrix, etc.
 \usepackage{txfonts}
 \usepackage{deluxetable}
+\usepackage{lscape}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% special packages and corresponding usages
@@ -97,6 +107,9 @@
 %\usepackage{ctable}
 %-------------- add texts in box, see: https://tex.stackexchange.com/questions/36524/how-to-put-a-framed-box-around-text-math-environment/36528
 %\usepackage{tcolorbox}
+%-------------- define new column type, see: https://tex.stackexchange.com/questions/257128/how-does-the-newcolumntype-command-work
+%\usepackage{array}
+%\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{5pt}}m{#1}}
 
 % -----------------------------------------------------------------------------------------------
 % Turning references and citations into hyperlinks in color
@@ -410,26 +423,6 @@
 \newcommand{\dl}{\ensuremath{D_{\rm L}}\xspace}
 %\newcommand{\pripk}{\ensuremath{P_{\textrm{pri}}(k)}}
 \newcommand{\taueq}{\ensuremath{\tau_{\rm eq}}\xspace}
-
-%%------------------------------------- begin of a slide ----------------------------------------
-%\begin{frame}{}
-%    block options: alertblock, exampleblock
-%
-%\end{frame}
-%%===================================== end of a slide ==========================================
-
-%%------------------------------------- begin of a slide ----------------------------------------
-%\begin{frame}{Global measurements are not a full exploitation}
-%    \vspace*{-.3em}
-%    \begin{columns}[c]
-%        \begin{column}{5.5cm}
-%        \end{column}
-%        \hspace*{-3em}
-%        \begin{column}{5.5cm}
-%        \end{column}
-%    \end{columns}
-%\end{frame}
-%%===================================== end of a slide ==========================================
 
 %= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 % fancy header setup in P88

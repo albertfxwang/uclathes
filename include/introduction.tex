@@ -1,30 +1,218 @@
 
-%
-% introduction.tex
-% Copyright (C) 1995 by John Heidemann, <johnh@isi.edu>.
-% $Id: demo2int.tex,v 1.1 1996/01/12 18:13:58 johnh Exp $
-%
-
 \chapter{Introduction}
 
-say something about GLASS, slitless spectroscopy, metallicity, etc.
+\section{What is the baryon cycle and why is it important?}
+
+Baryon cycle is the cycling of the cosmic baryon budget through star formation and gas flows. Galaxies grow by
+getting their fuel from the intergalactic medium (gas inflows), converting it into stars (star formation), and
+returning energy/material to their surroundings (gas outflows). Figure~\ref{fig:M82} presents a vivid example of
+this complex phenomenon in the local Universe.
 %= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-% paragraph about GLASS and slitless grism spectroscopy from HST
+%%% Figures: M82
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{/Users/albert/Dropbox/latex_figures/schematics/M82_gasflows_texted.png}
+    \caption[Onset of baryon cycling in the local Universe: M82.]{Onset of baryon cycling in the local Universe: the Messier 82
+    galaxy. Overlaid are the conjectured movements of gas in and around this galaxy undergoing active star
+    formation.
+    \label{fig:M82}}
+\end{figure}
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+While we have developed a concordance cosmological framework of the $\Lambda$ cold dark matter ($\Lambda$CDM)
+hierarchical structure formation \citep[see \eg][and references therein]{PlanckCollaboration:2018va}, 
+we still lack a quantitative and coherent understanding of these baryonic
+processes, without which the formation and evolution of galaxies, e.g., our Milky Way (MW), cannot be
+characterized in detail.
 
+\section{How can we observe the baryon cycle at the peak of cosmic star formation?}
+
+The integral field spectroscopy (IFS) has expanded our vision of galaxies from integrated spectroscopic
+quantities extracted from small subregions through single slits/fibres to panoramic 2-dimensional (2D) views
+across their full surfaces, allowing for spatial variations of physical properties.  This facilitates several
+large ground-based surveys, \eg, MaGNA \citep{Bundy:2015ft,Law:2015hc}, SAMI
+\citep{TheSAMIGalaxySurv:wpN2l47X,Medling:2018hx}, CALIFA \citep{Sanchez:2016cs}, to capture the dynamic
+signatures of the baryon cycle in action.
+%rich baryonic processes of galaxy assembly, feedback, and chemical enrichment in fine spatial richness.
+Yet the requirement of sufficient sampling, \ie, on sub-kiloparsec (sub-kpc) scale, to accurately map interesting
+kinematic features and spatial structures have limited the focus of such surveys to nearby galaxies
+($z\lesssim0.03$).  However, the local Universe is only the downhill of cosmic star formation, and the true
+climax of baryonic mass assembly and chemical enrichment happens at the epoch of $1\lesssim z\lesssim3$, as shown
+in Figure~\ref{fig:cosmic_noon} \citep[see \eg, ][and references there in]{2014ARA&A..52..415M,Abramson:2016wf}.
+%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+%%% Figures
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{/Users/albert/Dropbox/latex_figures/othersPaper/abramson16_fig1_noon.png}
+    \caption[The rise and fall of the cosmic average star-formation rate density.]{The rise and fall of the
+    cosmic average star-formation rate density.
+    The grey shaded region marks the peak epoch of cosmic star formation, usually coined the ``cosmic noon''.
+    At the cosmic noon, our Universe assembled roughly one half of its present day stellar mass using less than one third of its age.
+    Figure credit: \citet{Abramson:2016wf}.
+    \label{fig:cosmic_noon}}
+\end{figure}
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Numerical hydrodynamic simulations are by design capable of reproducing realistic galaxies at this epoch, by
+modeling various baryonic processes as sub-grid prescriptions
+\citep{Dave:2017gd,FIRESimulations:2017wj,Pillepich:2019uz}. The vast majority of observational programs
+targetting cosmic-noon galaxies only measure their integrated spectroscopic quantities through single slits.
+Albeit offering great insight on the physics of galaxy formation and evolution at a population level, this kind
+of integrated spectroscopy lacks the ability to dissect the baryon cycle in individual systems.
+%However, there is ample evidence that the morphological transformation also occurs during the cosmic noon
+%\citep{Mortlock:2013dg}, such that the predominant shape of galaxies change from irregular to ordered structure,
+%\ie, disk and bulge, which have drastically different spectral properties. Neglecting this distinction might
+%result in a biased picture of the baryon cycle.  In Fig.~\ref{fig:ers}, I demonstrate such bias associated with
+%the derivation of key physical properties from spectroscopy with partial spatial coverage.
+Ground-based IFS is no longer capable of probing the necessarily fine details at sub-kpc scale, ascribed to the
+atmospheric beam smearing effect and the intrinsically small size of high-$z$ galaxies.  As displayed in
+Figure~\ref{fig:spatial_resolution}, the half-light radius of a typical \Lstar galaxy at $z$$\sim$2 is
+$\sim$2.5\kpc. In comparison, the optimal median seeing of $\sim$$0\farcs6$ is equivalent to a physical size of
+$\sim$5\kpc, resulting in the vast majority of $z$$\sim$2 star-forming galaxies unresolved.  The assistance of
+adaptive optics (AO) can mitigate this problem, yet is challenging due to several reasons: low Strehl ratio and
+throughput, dearth of tip/tilt stars, narrow field of view with limited multiplexing capability, etc.  Therefore,
+we need a more effective approach for sub-kpc scale spatially resolved spectroscopy of cosmic noon sources to
+compare statistically with theoretical results of cosmological zoom-in simulations, to shed light upon the
+cycling of baryons.
+
+%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+%%% Figures
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{/Users/albert/Dropbox/latex_figures/schematics/spatial_resolution_difference.png}
+    \caption[The relationship among the effective radius, star-formation rate and stellar mass for galaxies at
+    $z\sim2$.]{The relationship among the effective radius, star-formation rate and stellar mass for galaxies at $z\sim2$ covered by the CANDELS survey.
+    The region where MW progenitors reside according to abundance matching is denoted by a red circle.
+    The spatial resolution from natural seeing, native HST, and with gravitational lensing magnification combined
+    are marked by the horizontal lines.
+    We see that the only feasible approach to unambiguously resolve the MW progenitors is through the synergy of HST
+    diffraction limit and lensing magnification.
+    Figure credit: \citet{Wuyts:2012iw}.
+    \label{fig:spatial_resolution}}
+\end{figure}
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = paragraph about GLASS and
+%slitless grism spectroscopy from HST
+In my dissertation, I took a different route.  The native resolution of the wide-field camera three (WFC3)
+onboard the Hubble Space Telescope (\hst) is $\sim0\farcs13$, equivalent to a spatial scale of $\sim$1\kpc at
+$z\sim2$ (cf.  Figure~\ref{fig:spatial_resolution}), already matching the spatial resolution achieved by the
+aforementioned IFS surveys (\ie MaGNA, SAMI, CALIFA) in mapping the physical properties of nearby galaxies.  This
+spatial sampling rate is unhampered by atmospheric turbulence because the telescope is floating on top.  The
+infrared (IR) spectroscopy on HST is enabled by the WFC3 grism elements.  During observation, light from the
+science target is dispersed along a certain spatial axis pertinent to the telescope's roll angle \emph{without
+any slits}.  As a consequence, source morphology along the light dispersion direction is convolved onto the
+wavelength axis, causing the morphological broadening effect \citep{vanDokkum:2011cq}.  As shown in
+Figure~\ref{fig:macs1149_grism}, using some state-of-the-art data reduction techniques, I have been able to
+extract the appropriate 2D spectral information of my targets in spite of the heavy blending of neighboring
+objects and morphological broadening effect, to facilitate subsequent spatially resolved analysis.
+
+The gravitational lensing phenomenon further improves the spatial resolution by roughly $\sqrt{\mu}$,
+where $\mu$ is the lensing magnification factor.
+Thus by targeting cosmic-noon galaxies in the background and
+gravitationally lensed by foreground clusters of galaxies with the \hst WFC3/IR grism elements, I exploit the
+lensing boost of \hst's resolving power to achieve sub-kpc scale spatial sampling of high-$z$ galaxies.
+Therefore I compile a statistically significant sample of star-forming galaxies at cosmic noon,
+whose spatial distribution of key physical properties are mapped out \emph{precisely}.
+These properties include stellar mass (\Mstar), star-formation rate (SFR), gas-phase
+metallicity\footnote{Throughout this dissertation I refer to the relative abundance of oxygen to hydrogen in the
+interstellar medium as gas-phase metallicity, or just metallicity for simplicity.}, dust extinction, stellar
+population age, total gas mass, etc.
+This sample of galaxies has been shown to provide key insights into the effects of gas flows and feedback on the
+cycling of baryons at the cosmic noon.
+
+%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+%%% Figures
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{/Users/albert/Dropbox/latex_figures/grismReduction/M1149_PA111_grismdemo.png}
+    \caption[State-of-the-art data reduction techniques for \hst WFC3/IR slitless spectroscopy.]{
+    State-of-the-art data reduction techniques for \hst WFC3/IR slitless spectroscopy are developed and adopted 
+    throughout my dissertation work.
+    \textit{Left}: the color-composite image of the galaxy cluster \clyi, where the first multiply imaged
+    supernova (\ie SN Refsdal) is discovered, as marked by the white arrows \citep{2015Sci...347.1123K}.
+    \textit{Middle}: the discovery of SN Refsdal triggers an HST follow-up grism program (Proposal ID 14041, P.I.
+    Kelly) exposing the center of \clyi with 30 orbits of WFC3/G141 split equally into 2 position angles.
+    The obtained grism exposure from one of them is shown here.
+    The analysis of these data constitutes a significant part in my dissertation work (see Chapter 3).
+    \textit{Right}: Due to the slitless nature of \hst grism spectroscopy, severe blending takes place for
+    neighboring objects along the light dispersion direction (see the middle panel).
+    The data reduction techniques used throughout my dissertation work (see Chapter 4 for more details) 
+    properly account for this neighbour contamination and construct 2D spectral models for all sources 
+    within the WFC3 field of view (FoV).
+    These spectral models are refined iteratively until a convergence point where the residual in the grism
+    exposures after subtracting the fitted continuum models becomes negligible, which is shown here.
+    Figure credit: Gabe Brammer.
+    \label{fig:macs1149_grism}}
+\end{figure}
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 %= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-% paragraph about HFF
+\section{Dissertation Overview}
 
+The content of my dissertation is briefly described as follows.
 
+Chapter 2 is adapted from my first-author paper published as Wang et al. (2015), ApJ, 811, 29, DOI:
+10.1088/0004-637X/811/1/29, and is reproduced with permission from the AAS.
+It presents a strong and weak lensing reconstruction of the massive cluster \cler, the first cluster for
+which deep Hubble Frontier Fields (\hff) images and spectroscopy from the Grism Lens-Amplified Survey from Space
+(\glass) are available.
+By performing a targeted search for emission lines in multiply imaged sources using the
+GLASS spectra, I obtain five high-confidence spectroscopic redshifts and two tentative ones. I confirm one
+strongly lensed system by detecting the same emission lines in all three multiple images. I also search for
+additional line emitters blindly and use the full GLASS spectroscopic catalog to test reliability of photometric
+redshifts for faint line emitters. I see a reasonable agreement between our photometric and spectroscopic
+redshift measurements, when including nebular emission in photometric redshift estimations. I introduce a
+stringent procedure to identify only secure multiple image sets based on colors, morphology, and spectroscopy. By
+combining 7 multiple image systems with secure spectroscopic redshifts (at 5 distinct redshift planes) with 18
+multiple image systems with secure photometric redshifts, I reconstruct the gravitational potential of the
+cluster pixellated on an adaptive grid, using a total of 72 images. The resulting mass map is compared with a
+stellar mass map obtained from the deep \spitzer Frontier Fields data to study the relative distribution of stars
+and dark matter in the cluster. I find that the stellar to total mass ratio varies substantially across the
+cluster field, suggesting that stars do not trace exactly the total mass in this interacting system. 
 
-%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-% paragraph about galaxy evolution, metallicity and its spatial distribution, as well as their roles in
-% understanding galaxy evolution process
+Chapter 3 is adapted from my first-author paper published as Wang et al. (2017), ApJ, 837, 89, DOI:
+10.3847/1538-4357/aa603c, and is reproduced with permission from the AAS.
+I combine the deep \hst grism spectroscopy from both \glass and the SN Refsdal follow-up program (see
+Figure~\ref{fig:macs1149_grism}) with a new Bayesian method to derive maps of gas-phase
+metallicity for 10 star-forming galaxies at
+high redshift ($1.2\lesssim z \lesssim2.3$). Exploiting lensing magnification by the foreground cluster \clyi, I
+reach sub-kpc spatial resolution and push the limit of stellar mass associated with such high-z spatially
+resolved measurements below $10^8$ \Msun for the first time. My maps exhibit diverse morphologies, indicative of
+various effects such as efficient radial mixing from tidal torques, rapid accretion of low-metallicity gas, and
+other physical processes that can affect the gas and metallicity distributions in individual galaxies. Based upon
+an exhaustive sample of all existing sub-kpc resolution metallicity gradient measurements at high $z$, I find
+that predictions given by analytical chemical evolution models assuming a relatively extended star-formation
+profile in the early disk-formation phase can explain the majority of observed metallicity gradients, without
+involving galactic feedback or radial outflows.  I observe a tentative correlation between stellar mass and
+metallicity gradients, consistent with the ``downsizing'' galaxy formation picture that more massive galaxies are
+more evolved into a later phase of disk growth, where they experience more coherent mass assembly at all radii
+and thus show shallower metallicity gradients. In addition to the spatially resolved analysis, I compile a sample
+of homogeneously cross-calibrated integrated metallicity measurements spanning three orders of magnitude in
+stellar mass at $z\sim1.8$. We use this sample to study the mass-metallicity relation (MZR) and find that the
+slope of the observed MZR can rule out the momentum-driven wind model at a 3-$\sigma$ confidence level.
 
+Chapter 4 is adapted from my first-author paper currently under review, \ie, Wang et al. (2018), arXiv:1808.08800.
+I report the first sub-kpc spatial resolution measurements of strongly inverted gas-phase 
+metallicity gradients in two dwarf galaxies at $z$$\sim$2.
+The galaxies have stellar masses $\sim$$10^9$\Msun, specific star-formation rate $\sim$20 \Gyr$^{-1}$, and 
+global metallicity $\oh\sim8.1$ (1/4 solar).
+Their metallicity radial gradients are measured to be highly inverted, \ie, 0.122$\pm$0.008 and 
+0.111$\pm$0.017 dex/kpc, which is hitherto unseen at such small masses in similar redshift ranges.
+From the HST observations of the source nebular emission and stellar continuum, I
+present the 2D spatial maps of star-formation rate surface density, stellar population age, and 
+gas fraction, which show that the two galaxies are currently undergoing rapid mass assembly via disk 
+inside-out growth.  More importantly, using a simple chemical evolution model, I find that the gas 
+fractions for different metallicity regions cannot be explained by pure gas accretion.  My spatially 
+resolved analysis based on a more advanced gas regulator model results in a spatial map of net gaseous 
+outflows, triggered by active central starbursts, that potentially play a significant role in shaping the 
+spatial distribution of metallicity by effectively transporting stellar nucleosynthesis yields outwards.  
+The relation between wind mass loading factors and stellar surface densities measured in different regions 
+of our galaxies shows that a single type of wind mechanism, driven by either energy or momentum 
+conservation, cannot explain the entire galaxy.  These sources present a unique constraint on the effects 
+of gas flows on the early phase of disk growth from the perspective of spatially resolved chemical 
+evolution within individual systems.
 
+Chapter 5 is a summary of my previous work and concludes with a prospect of my ongoing analyses.
 
-
-% \section{Related Work}
-%	\label{sec:intro_related_work}
 

@@ -60,12 +60,9 @@ as possible is thus a fundamental step if we want to improve the mass
 models of the HFF clusters, and thus make the most of this
 groundbreaking initiative. Several efforts are currently underway to
 secure these redshifts, including our own based on the Grism Lens
-Amplified Survey from Space (GLASS) data, which is presented in this paper. GLASS
-is a large \hst program that has just completed obtaining deep spectroscopy in the fields of ten clusters,
+Amplified Survey from Space (GLASS) data.
+GLASS is a large \hst program that has just completed obtaining deep spectroscopy in the fields of ten clusters,
 including all six in the HFF program.
-%A full description of the
-%survey and its scientific drivers is given in paper I (Treu et
-%al. 2015, submitted).
 
 Here we present a new mass model for the galaxy cluster
 \cler, the first cluster for which both GLASS and HFF complete
@@ -78,14 +75,14 @@ dimensional mass distribution to the distribution of stellar mass as
 determined from the analysis of deep \spitzer imaging data, indicating that the stellar to mass ratio
 varies substantially across the cluster, which is expected given the merging nature of this cluster. 
 
-The paper is organized as follows. In Section~\ref{sec:data} we give
+This Chapter is organized as follows. In Section~\ref{sec:data} we give
 an overview of the data. In Section~\ref{sec:datareduction} we
 describe the reduction and analysis of the GLASS data. In
 Section~\ref{sec:mul} we detail our algorithm for selection of
 multiple image systems. In Section~\ref{sec:mass} we present our mass
 model and study the relative distribution of stellar and total mass. In
 Section~\ref{sec:conc} we summarize our conclusions. Throughout this
-paper we adopt a standard concordance cosmology with $\Omega_m=0.3$,
+work we adopt a standard concordance cosmology with $\Omega_m=0.3$,
 $\Omega_{\Lambda}=0.7$ and $h=0.7$. All magnitudes are given in the AB
 system \citep{Oke74}.
 
@@ -95,7 +92,7 @@ system \citep{Oke74}.
 \label{sec:data}
 
 Being one of the most extensively studied galaxy clusters, \cler is observed on a spectrum extending
-from X-ray to radio bands \citep[e.g.][]{2004MNRAS.349..385K}. In this paper, we focus on the optical and NIR
+from X-ray to radio bands \citep[e.g.][]{2004MNRAS.349..385K}. In this Chapter, we focus on the optical and NIR
 imaging and spectroscopy data newly acquired with the Hubble and
 \spitzer Space Telescopes, as part of the GLASS program (\ref{sec:glass}) and
 HFF initiative (\ref{sec:HFF} and \ref{sec:spitz}).
@@ -121,7 +118,7 @@ total exposure time of 7 orbits.  These observations map the cluster
 infall regions.
 
 A key focus point of GLASS is the advancement and improvement of the
-lens models of the 10 surveyed clusters.  This paper focuses on the
+lens models of the 10 surveyed clusters.  This work focuses on the
 modeling of the first cluster in the GLASS survey with complete GLASS
 spectroscopy and HFF imaging as described in
 Section~\ref{sec:datareduction}.
@@ -136,8 +133,7 @@ Abell 370, Abell 2744, MACSJ 2129, MACSJ 0416, MACSJ 0717, and MACSJ 1149. For a
 limiting magnitudes are roughly 29 ABmag in both the ACS/optical (F435W, F606W, F814W) and WFC3/IR filters
 (F105W, F125W, F140W, F160W).  All six HFF clusters are included in the GLASS sample described in
 Section~\ref{sec:glass}.  The program was initiated in \emph{HST} cycle 21 and is planned for completion in 2016.
-The first cluster to have complete HFF and GLASS data available is the cluster studied in this paper, namely
-\cler.
+The first cluster to have complete HFF and GLASS data available is the cluster \cler.
 
 An important aspect of the HFF efforts has been the community efforts
 to model the lensing clusters.  Prior to the start of the HFF
@@ -234,7 +230,7 @@ objects identified in this work, with color coding following the convention adop
 
 The GLASS observations are designed to follow the 3D-HST observing strategy \citep{Brammer:2012p12977}.
 The data were processed with an updated version of the 3D-HST reduction pipeline\footnote{\url{http://code.google.com/p/threedhst/}}.  Below we summarize the main steps in the reduction process of the GLASS data but refer to 
-\cite{Brammer:2012p12977} and the GLASS survey paper \citep{Treu:2015p36793} for further details.
+\citet{Brammer:2012p12977} and \citet{Treu:2015p36793} for further details.
 
 The data were taken in a 4-point dither pattern identical to the one
 shown in Figure~3 of \cite{Brammer:2012p12977} to optimize rejection of bad pixels and cosmic rays
@@ -385,7 +381,7 @@ are used in lens modeling.
 %= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{fig/Photo-z_flow_chart.pdf}
+    \includegraphics[width=.8\textwidth]{fig/Photo-z_flow_chart.pdf}
     \caption[Flow chart describing our procedure for assigning photometric redshifts to multiple image
     systems.]{Flow chart describing our procedure for assigning photometric redshifts to multiple image systems.
     Two segmentation maps, a ``hot'' and a ``cold'' version, were used for source detection. The detection and
@@ -407,17 +403,17 @@ are used in lens modeling.
 
 GLASS spectroscopy was carefully examined for a total of \NimgTOT{}
 multiply lensed arc candidates mostly seen on both P.A.s with the goal
-of measuring spectroscopic redshifts.  As described in GLASS paper I,
-each spectrum was visually inspected by multiple investigators
-(X.W. and K.B.S.) using the GLASS Graphic User Interfaces (GUIs) GLASS
+of measuring spectroscopic redshifts.
+Each spectrum was visually inspected by multiple investigators
+using the GLASS Graphic User Interfaces (GUIs) GLASS
 Inspection GUI (GiG) and GLASS Inspection GUI for redshifts (GiGz) The
 results were then combined and a preliminary list of arcs with
 emission lines was drafted. In the end, another round of double-check
 by re-running GiGz was also executed to make sure no potential
 emission lines were missed. Following GLASS procedure, a quality flag
 was given to the redshift measurement: Q=4 is secure; Q=3 is probable;
-Q=2 is possible; Q=1 is likely an artifact. As described in paper I,
-these quality criteria take into account the signal to noise ratio of
+Q=2 is possible; Q=1 is likely an artifact.
+These quality criteria take into account the signal to noise ratio of
 the detection, the probability that the line is a contaminant, and the
 identification of the feature with a specific emission line. For
 example, Q=4 is given for spectra where multiple emission have been
@@ -564,7 +560,7 @@ agreement between spectroscopic and photometric analyses remains
 unchanged.
 
 % = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-\begin{figure}[ht]
+\begin{figure}
     \centering
     \includegraphics[width=\textwidth]{fig/a2744_ELobjs_photz_vs_specz.pdf}
     \caption[Comparison between the spectroscopic and photometric redshifts.]{Comparison between the spectroscopic and photometric redshifts for the 55 objects with
@@ -596,7 +592,7 @@ Maps of the convergence and magnification
 are shown in Figure~\ref{fig:lens_maps}.
 
 % = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
-\begin{figure}[ht]
+\begin{figure}
     \includegraphics[width=0.5\textwidth]{fig/kappaplanck.pdf}
     \includegraphics[width=0.5\textwidth]{fig/magplanck.pdf}
     \caption[Convergence and magnification of our lens model.]{Convergence (left), $\kappa$ and flux magnification (right), $\mu$, maps of \cler produced by our
@@ -668,12 +664,6 @@ pre-HFF data. The uncertainties in this current version of the model
 are smaller, consistent with the fact that we have increased
 the number of strong lensing constraints.
 
-
-
-% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-%\input{a2744_table_mass.tex}
-% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
 % = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 \begin{figure}
     \centering
@@ -721,7 +711,7 @@ are needed to perform this test in a more stringent manner.
 % = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{fig/redshift_comparison.pdf}
+    \includegraphics[width=.8\textwidth]{fig/redshift_comparison.pdf}
     \caption[Comparison of the redshifts estimates.]{Comparison of the redshifts determined in this work
     ($z_{\textrm{Bayes}}$) versus the model-predicted redshifts given by \citet{2014arXiv1409.8663J} for all
     multiple image systems used in the lens model. Note that the previously confirmed spectroscopic systems are
@@ -804,7 +794,7 @@ violation. Thus, this result should be considered as preliminary until
 confirmed by a more detailed analysis.
 
 %= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
-\begin{figure}[ht]
+\begin{figure}
     \includegraphics[width=0.5\textwidth]{fig/a2744_clmember_smass_map_kpc2.pdf}
     \includegraphics[width=0.5\textwidth]{fig/total_stellar_mass_ratio_A2744.pdf}
     \caption[Stellar mass surface density and stellar to total mass ratio.]{Stellar mass surface density (left) and stellar to total mass ratio (right) distributions of \cler.
@@ -817,7 +807,7 @@ confirmed by a more detailed analysis.
 \section{Conclusions}
 \label{sec:conc}
 
-In this paper we have used spectroscopic data from the GLASS survey in
+We have used spectroscopic data from the GLASS survey in
 combination with ultra-deep imaging data from the HFF program to
 construct a strong gravitational lens model for the cluster \cler. In an
 effort to obtain a precise and accurate mass model we carried out a
@@ -866,4 +856,13 @@ stringent test.
 \item We construct a stellar surface mass density map and the stellar to total mass ratio by selecting the light associated with red sequence cluster galaxies and using the total mass density map obtained from strong lensing. Albeit with significant uncertainties, we find that the stellar to mass ratio varies significantly across the cluster, tentatively suggesting that stellar mass does not trace total mass in this interacting system.
 
 \end{enumerate}
+
+%%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+\input{table/a2744_table_arcs.tex}
+
+\begin{landscape}
+\input{table/a2744_table_ELtot.tex}
+\end{landscape}
+%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+
 

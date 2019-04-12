@@ -17,8 +17,8 @@ can further complicate the spatial distribution of star formation, as recently r
 \citet{2015ApJ...814..161V,TheGrismlensampli:-R7Qg0z6}.
 Measurements of gas-phase metallicity, \ie, the chemical abundances of elements heavier than
 hydrogen and helium in the interstellar medium (ISM), are a powerful means to shed light on
-this complexity\footnote{Hereafter throughout the paper, we refer to \gpm as metallicity for
-simplicity.}, because the metal enrichment history is strongly tied to the mass assembly history in galaxy evolution
+this complexity,
+because the metal enrichment history is strongly tied to the mass assembly history in galaxy evolution
 \citep{2011MNRAS.416.1354D,Lu:2015ic}.  Since detailed elemental abundances are not directly measurable at extragalactic
 distances, the relative oxygen abundance in ionized gaseous nebulae, \ie, \oh, is often chosen as the observational proxy of
 metallicity.
@@ -87,14 +87,14 @@ with sub-kpc spatial resolution. To meet our goal, we improve upon the methodolo
 diagnostics simultaneously. We apply our advanced analysis to ultra-deep grism data of the massive galaxy cluster \clyi, thus
 exploiting the powerful synergy of \hst diffraction-limited spectroscopy and lensing magnification.
 
-The outline of this paper is as follows. In Section~\ref{sect:spec}, we introduce the spectroscopic observations used in this work
+The outline of this Chapter is as follows. In Section~\ref{sect:spec}, we introduce the spectroscopic observations used in this work
 and the selection of our \mg sample. The photometric data and galaxy cluster lens models are briefed in Section~\ref{sect:phot}.
 We then present our entire analysis process in Section~\ref{sect:analysis}, and show our results in terms of global demographics
 and spatially resolved analysis in Sections~\ref{sect:global} and \ref{sect:sra}, respectively.  Finally,
 Section~\ref{sect:conclu} will conclude and discuss our study. The concordance cosmological model (\Om=0.3, \Ol=0.7,
-$H_0=70\Hunit$) and the AB magnitude system \citep{1983ApJ...266..713O} are used throughout this paper.  Without specific number
+$H_0=70\Hunit$) and the AB magnitude system \citep{1983ApJ...266..713O} are used throughout.  Without specific number
 showing the wavelength, the names of forbidden lines are simplified as $\OII~\lambda\lambda3726,3729\defeq\OII$,
-$\OIII~\lambda5008\defeq\OIII$, $\NII~\lambda6585\defeq\NII$, $\SII~\lambda\lambda6718,6732\defeq\SII$ in this paper\footnote{The
+$\OIII~\lambda5008\defeq\OIII$, $\NII~\lambda6585\defeq\NII$, $\SII~\lambda\lambda6718,6732\defeq\SII$\footnote{The
 wavelength values are taken from \url{http://classic.sdss.org/dr7/algorithms/linestable.html}}.
 
 
@@ -205,9 +205,11 @@ range of G102(G141), calculated from \citet{Schmidt:2016ez}. Our data provide an
 
 \subsection{Sample Selection}\label{subsect:srcselect}
 
+\begin{landscape}
 %= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 \input{table/m1149_table_srcprop.tex}
 %= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+\end{landscape}
 
 The selection of our \mg sample is based upon the master redshift
 catalog for \clyi\footnote{available at \url{https://archive.stsci.edu/prepds/glass/}}, published by the \glass collaboration.
@@ -258,16 +260,16 @@ from the extensive lens modeling effort summarized by \citet{2015arXiv151005750T
     \caption[Multi-perspective view of the SN Refsdal host galaxy multiple image 1.3, \ie, ID 04504 in our
     sample.]
     {Multi-perspective view of the SN Refsdal host galaxy multiple image 1.3, \ie, ID
-    04054 in our \mg sample.  \textbf{Upper left}: zoom-in color composite stamp cut out from
+    04054 in our \mg sample.  \textit{Upper left}: zoom-in color composite stamp cut out from
     Figure~\ref{fig:RGBfullFoV}, where the estimated site of the un-observed past appearance
-    of SN Refsdal is denoted by the red circle. \textbf{Upper middle}: stellar mass surface
+    of SN Refsdal is denoted by the red circle. \textit{Upper middle}: stellar mass surface
     density map for this galaxy, where the source plane de-projected galactocentric radius
-    contours are overlaid, in 2 kpc intervals, starting from 1 kpc.  \textbf{Upper right}:
+    contours are overlaid, in 2 kpc intervals, starting from 1 kpc.  \textit{Upper right}:
     \Ha surface brightness map combined from the \hst grism exposures at all PAs from the
     \glass and Refsdal follow-up programs.
     The black contours again show the de-projected galactocentric radii in the same fashion
     presented in the stellar mass surface density map in the upper middle panel.
-    \textbf{Lower rows}: combined surface brightness maps of \OIII, \Hb, and \OII, presented
+    \textit{Lower rows}: combined surface brightness maps of \OIII, \Hb, and \OII, presented
     in the same fashion as in the \Ha emission line map in the upper right panel.}
     \label{fig:multiP_4054}
 \end{figure}
@@ -634,8 +636,8 @@ We use the Markov Chain Monte Carlo sampler \emc \citep{ForemanMackey:2013io} to
 explore the parameter space, setting the number of walkers to 100 with 5,000 iterations for each walker,
 and a burnin of 2,000. The autocorrelation times are computed for
 each parameter and are used to make sure chains have converged.
-An example constraint result for the SN Refsdal host galaxy's global EL fluxes is shown in Figure~\ref{fig:corner}. While this
-paper is primarily concerned with gas-phase metallicities, our method simultaneously provides constraints on $\Av^{\rm N}$ and
+An example constraint result for the SN Refsdal host galaxy's global EL fluxes is shown in Figure~\ref{fig:corner}.
+While this work is primarily concerned with gas-phase metallicities, our method simultaneously provides constraints on $\Av^{\rm N}$ and
 SFR which can be compared to the results of SED fitting.
 We then calculate the lensing-corrected de-reddened \Ha luminosity from $f_{\Hb}$ (assuming the fiducial Balmer ratio) and the 
 magnification estimate of the source.
@@ -1330,7 +1332,7 @@ before the gas clouds can collapse.
 
 \subsection{Summary}
 
-In this paper, we took advantage of the deep \hst grism spectroscopic data, acquired by the
+In this Chapter, we took advantage of the deep \hst grism spectroscopic data, acquired by the
 \glass and SN Refsdal follow-up programs, and obtain \gpm maps in high-$z$ star-forming
 galaxies. The \hst grisms provide an un-interrupted window for observing the cosmic evolution
 of metallicity gradients through $z$ from 2.3 to 1.2 (corresponding to the age of the
@@ -1472,6 +1474,112 @@ massive systems and provide a more suitable comparison to our \mgms at high $z$.
 improvements on both the observational and theoretical sides, we will be able to answer why
 in these high-$z$ star-forming disk galaxies, the \mgs can be established so early and why
 they are so steep compared with those found in local analogs.
+
+
+\setcounter{section}{0}
+\renewcommand{\thesection}{\thechapter.\Alph{section}}
+
+\section{Emission line kinematics from ground-based IFU observations}\label{sect:kinem}
+
+When available, we use ground based spectroscopic IFU data
+to investigate the 2D kinematics of the sources for which we obtain
+metallicity maps from the \hst grism data.  A first
+set of ground-based data were obtained in 2015 with the instrument
+\muse on the \vlt, taken as part of the Director's Discretionary Time
+program 294.A-5032 (P.I. Grillo) aimed at assisting
+with the modeling of SN Refsdal.  The \muse pointing is denoted
+by the green square in Figure~\ref{fig:RGBfullFoV}.  The observations,
+data reduction, first results, and applications to the host galaxy of
+Refsdal and mass modeling of the cluster are described by \citet{2016ApJ...822...78G,Karman:2016cg}.
+Five objects in our \mg sample fall within the \muse pointing, with one on the edge of the FoV.
+Hence four maps showing complete kinematic structures can be extracted for sources IDs 02389, 02806, 03746, and 04054.
+A second set of ground based observations were obtained with the instrument \kmos also on the
+\vlt, as part of our \glass follow-up \kmos Large Program 196.A-0778 (P.I. Fontana). Two objects (IDs 05709 and 05968) in our
+sample were targeted with the deployable IFUs, using the YJ grating.
+The observations, data reduction, and first results from this program are described by \citet{Mason:2016ww}.
+Thanks to lensing magnification, we push for the first time the mass limit of EL kinematic analyses to below $10^8\Msun$ (see Table~\ref{tab:kinem}).
+
+%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+\input{table/m1149_table_kinem.tex}
+%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Kinematic information is valuable for interpreting \mgs and their evolution. We derive gas-phase kinematics for the aforementioned 
+galaxies, by fitting the strongest available emission feature. This is typically \CIII$\lambda\lambda$1907,1909,
+\OII, or \OIII$\lambda\lambda$4960,5008. We fit each doublet as a
+sum of two Gaussian components with equal velocity dispersion ($\sigma$) and redshift, plus a
+constant continuum level. The fits are weighted by the inverse-variance spectrum estimated
+from sky regions in the data cubes. Best-fit values for the spatially integrated spectra are
+given in Table~\ref{tab:kinem}. The intrinsic velocity dispersion $\sigma_{\rm int}$ is calculated by subtracting the instrument
+resolution (determined from sky ELs) in quadrature from the observed best-fit velocity dispersion $\sigma_{\rm obs}$.
+For \CIII and \OII we determine the best-fit doublet ratio of
+the integrated spectra, while the \OIII doublet ratio is fixed to its intrinsic atomic value.
+For individual spaxels, we fix the doublet ratios to their integrated values in order to
+avoid spurious fits. We also spatially smooth each data cube with a 3-pixel (0\farcs6) kernel
+to improve SNR in the diffuse extended regions. We attempt to fit every spaxel in the
+smoothed data cube surrounding each object. Bad fits are rejected on the basis of low SNR and
+unrealistic values (typically requiring $20~\kms<\sigma_{\rm obs}<200~\kms$, and
+velocities within 200 \kms of the integrated systemic value).  Figure~\ref{fig:kinem} shows
+velocity fields of each source from all spaxels with acceptable EL fits.
+We discuss the kinematics of individual galaxies in the context of their metallicity
+gradients and other properties in Section~\ref{subsect:indvd}.
+For purposes of this discussion, we estimate velocity shear $V_{\rm shear}$ as the total change in velocity across the kinematic major axis of each source shown in Figure~\ref{fig:kinem}. Estimates of $V/\sigma$ in the text refer to $V_{\rm shear}$.}
+This quantity serves as a useful proxy for the gas orbital velocity: $V_{\rm shear} = 2 V_{\rm max} \sin i$, \ie, twice the 
+observed maximum orbital velocity (not corrected for inclination).
+
+\begin{figure}
+    \includegraphics[width=0.33\textwidth]{fig_kinematics/v_02389.pdf}
+    \includegraphics[width=0.33\textwidth]{fig_kinematics/v_02806.pdf}
+    \includegraphics[width=0.33\textwidth]{fig_kinematics/v_03746.pdf}\\
+    \includegraphics[width=0.33\textwidth]{fig_kinematics/v_04054.pdf}
+    \includegraphics[width=0.33\textwidth]{fig_kinematics/v_683.pdf}
+    \includegraphics[width=0.33\textwidth]{fig_kinematics/v_593.pdf}
+    \caption[Velocity fields derived from integral field spectra.]{Velocity fields derived from integral field spectra. \textit{Top row}: IDs
+    02389, 02806, 03746 (left to right) observed with \muse. \textit{Bottom row}: ID 04054
+    observed with \muse (see also Figure~8 in \citet{2016ApJ...822...78G}) and IDs 05709,
+    05968 (left to right) observed with \kmos.  In all cases, the color scale shows EL
+    velocity centroids in each spaxel, with contours showing \hst/ACS \I band continuum.
+    The kinematics map for galaxy 05709 (shown in the lower middle panel) is the first one to
+    date presented for star-forming galaxies with $\Mstar\lesssim10^8\Msun$ at $z\gtrsim1$.}
+    \label{fig:kinem}
+\end{figure}
+
+
+\section{Emission line flux measurements from \protect\hst grisms}\label{sect:ELflux}
+
+%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+\input{table/m1149_table_ELflux.tex}
+%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+After a careful selection, we compiled a list of sources most promising for the spatially resolved spectroscopic analysis in the 
+redshift range of $z\in[1.2, 2.3]$.
+For instance, we show the \glass spectra of two of these sources (one at $z\leq1.5$ with \Ha covered and the other at $z\geq1.5$ 
+without \Ha) in Figures~\ref{fig:3746} and \ref{fig:2389}.
+The SN Refsdal follow-up exposures, albeit only covering G141, have better SNRs compared with the spectra shown here by a factor 
+of $\sqrt{15/2}$ at each PA.  Combining all the available grism exposures, we measured the EL fluxes on all our sources and 
+presented the measurements in Table~\ref{tab:ELflux}.
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{fig/spectra_id03746_pa32.pdf}
+    \includegraphics[width=\textwidth]{fig/spectra_id03746_pa125.pdf}
+    \caption[The \hst grism spectra for one exemplary source in our sample ID 03746.]{The \hst grism spectra for one exemplary source in our sample, ID 03746, seen at the two \glass PAs displayed in the 
+    two sub-figures respectively. The \Ha EL of this galaxy is covered by G141 because of its redshift $z=1.25$.
+    In each sub-figure, the two small square panels on the left refer to the 2D
+    postage stamp (top) and the 1D collapsed image (bottom). The 2D postage stamp is created from the \hff \H-band co-adds. 
+    The eight panels in the middle and right rows show, from top to bottom, the contamination subtracted 1D spectra (where flux is 
+    represented by the blue solid line and the noise level by the cyan shaded band), the 1D contamination model in red dashed 
+    line, the contamination subtracted 2D spectra and the 2D spectra having source continuum further removed.
+    In the 1D and 2D spectra, the locations of emission lines are highlighted by vertical dotted lines in magenta and arrows in 
+    red, respectively, and the wheat colored patches cover contamination model defects.}
+    \label{fig:3746}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{fig/spectra_id02389_pa32.pdf}
+    \includegraphics[width=\textwidth]{fig/spectra_id02389_pa125.pdf}
+    \caption[Same as Figure~\ref{fig:3746}, except that source ID 02389 is shown.]{Same as Figure~\ref{fig:3746}, except that source ID 02389 is shown. The \Ha EL of this galaxy has shifted out of the 
+    grism coverage because of its redshift $z=1.89$.}
+    \label{fig:2389}
+\end{figure}
 
 
 

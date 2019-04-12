@@ -6,7 +6,7 @@
 Galaxy formation models require inflows and outflows of gas to regulate star formation 
 \citep{2008MNRAS.385.2181F,Recchi:2008gw,Bouche:2010kh,2012MNRAS.421...98D,Dayal:2013im,Dekel:2013id,Lilly:2013ko,Dekel:2014jm,Peng:2014hn,Pipino:2014it}, 
 yet this ``baryon cycle'' is not quantitatively understood. The interstellar medium (ISM) oxygen abundance 
-(\ie metallicity\footnote{Throughout the paper, we refer to \gpm as metallicity for simplicity.}) and its 
+(\ie metallicity) and its 
 spatial distribution
 is fortunately a key observational probe of this process
 \citep{Tremonti:2004ed,Erb:2006kn,2008A&A...488..463M,Bresolin:2009hh,2010MNRAS.408.2115M,Mannucci:2011be,Zahid:2011bb,Yates:2012kx,Zahid:2012cd,
@@ -65,7 +65,7 @@ dwarf galaxies from the Hubble Space Telescope (\hst) near-infrared (NIR) grism 
 with galaxy cluster lensing magnification.
 The details of data and sample galaxies are presented in Section~\ref{sect:data}. We describe our analysis methods alongside main 
 results in Section~\ref{sect:rslt}, and conclude in Section~\ref{sect:conclu}.
-Throughout this paper, a flat $\Lambda$CDM cosmology is assumed.
+Throughout this Chapter, a flat $\Lambda$CDM cosmology is assumed.
 
 
 \section{Data and Galaxy Sample}\label{sect:data}
@@ -161,7 +161,7 @@ In most cases, we find that metallicity gradients are approximately flat (\ie co
 $\sigma=0.03$ dex~kpc$^{-1}$) or slightly negative. A minority (10/81) of our sample shows positive (\ie ``inverted'') gradients,
 which are of interest as they pose a challenge to standard galactic chemical evolution models 
 \citep[\eg,][]{Molla:2005eq,Molla:2018em}.
-We have selected the two best examples with strongly inverted gradients for further study in this paper.
+We have selected the two best examples with strongly inverted gradients for further study in this Chapter.
 The two sources are ID03751 ($z=1.96,~\Mstar=1.12\times10^9\Msun$) in the prime field of \clsan, and ID01203
 ($z=1.65,~\Mstar=2.55\times10^9\Msun$) in the prime field of \clba.
 
@@ -386,7 +386,7 @@ We also compare the age estimates given by our SED fitting (Section~\ref{sect:da
 described above. The median values given by the former practice are systematically larger than those of the latter by $\sim$0.5
 dex, but we note that the uncertainties by the SED fitting are usually much larger due to the absence of prominent continuum
 spectral age indicators, \eg, \Dn and \HdA \citep{Kauffmann:2003cu}. Hence, we adopt the results from \Hb rest-frame EW as the
-average age for stellar populations throughout our paper, as we consider this a more reliable estimate.
+average age for stellar populations throughout our analysis, as we consider this a more reliable estimate.
 
 Finally, we calculate the gas fraction defined as
 \begin{align}
@@ -656,5 +656,137 @@ Our hypothesis suggests a more central concentration of the high ions \emph{in t
 combination of both outflow scalings results in inverted metallicity gradients.
 This prediction can be directly tested with spatially resolved spectroscopy of rest-frame
 ultraviolet absorption lines using instruments such as \keck/KCWI or VLT/MUSE.
+
+\setcounter{section}{0}
+\renewcommand{\thesection}{\thechapter.\Alph{section}}
+
+\section{Gas kinematics from \keck \osiris observations}\label{sect:kinem}
+
+Kinematics of \HII regions are of interest both for determining whether rotating gaseous disks are present, and the overall scale 
+of velocity dispersion which is thought to correlate with the mode of feedback.  We have obtained kinematic maps from \Ha emission 
+for source ID01203 as part of a GLASS followup campaign with the \osiris integral field spectrograph 
+\citep{Larkin:2006jd} on the \keck I telescope. Full details of the observations and analysis are presented 
+elsewhere \citep{Hirtenstein:2018tn}; here we give a brief summary.  Data were obtained on 2016 October 21 using 
+the Hn5 filter, 50 milliarcsecond scale, and laser guide star AO, which provides the excellent spatial sampling 
+needed to resolve velocity structure on the relevant $\sim$0\farcs1 scales. We obtained 3 exposures of 900 
+seconds each.  The \osiris Data Reduction Pipeline was used to process the data, following the standard methods 
+adopted in our previous work \citep{2013ApJ...765...48J}. We fit \Ha line emission in each spaxel with a Gaussian 
+function, requiring $\geq5\sigma$ significance for acceptable fits. Gas rotation velocity ($V$) and velocity 
+dispersion ($\sigma$) are determined from the Gaussian centroid and width. We correct velocity dispersions for 
+the effects of instrument resolution and beam smearing by subtracting these terms in quadrature from the best-fit 
+Gaussian dispersion. The median beam smearing correction is a 7\% reduction in $\sigma$. 
+
+Resulting maps of $V$ and $\sigma$ in Figure~\ref{fig:kinem} reveal a sheared velocity field with high local velocity dispersion
+($\gtrsim50$ \kms), common among disk galaxies at similar redshift. To quantify the degree of rotational support, we extract a 1D
+velocity profile along the kinematic major axis. We fit this with the circular rotation curve of an exponential
+disk mass profile. The disk rotation curve is in good agreement with the data, with maximum velocity $V\sin i = 94\pm7$ \kms.
+Here $i$ is the disk inclination angle relative to the line-of-sight. The pixel-averaged $\sigma = 73\pm3$ \kms 
+such that we derive $V/\sigma = (1.3\pm0.1) / \sin i$ indicating orderly rotation in spite of a high level of ISM 
+turbulence.
+This $V/\sigma$ ratio is typical of the galaxy population harboring thick disks
+at similar mass and redshift \citep{2015ApJ...799..209W,2015arXiv150901279L}.
+
+%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+%%% Figure: kinematic plots for ID 01203
+\begin{figure}
+    \centering
+    \includegraphics[height=1.7in]{fig/dispersion_ID01203.pdf}
+    \includegraphics[height=1.7in]{fig/rotation_ID01203.pdf}
+    \includegraphics[height=1.7in]{fig/rotcurve_ID01203.pdf}
+    \caption[\Ha emission kinematics of ID01203 from our \osiris AO-assisted observations.]
+    {\Ha emission kinematics of ID01203 from our \osiris AO-assisted observations showing the velocity 
+    dispersion ({\it
+    left}), the rotation velocity ({\it center}), and rotation curve extracted along the major axis ({\it right}).
+    The overlaid contours in the left and center panels also represent the source plane de-projected galacto-centric radii, but in
+    0.25 kpc interval. To give relative scale with respect to our \hst stamps, the 1 kpc radius contour is still in solid.
+    The red curve in the right panel is the best-fit rotation curve for an exponential disk mass distribution, giving a maximum
+    line-of-sight velocity $V\sin i = 94 \pm 7$ \kms.
+    The data are in good agreement with a thick disk rotation curve despite a high level of turbulence.
+    \label{fig:kinem}}
+\end{figure}
+%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+\section{Extracting and fitting 1D and 2D \protect\hst grism spectra}\label{sect:grismspec}
+
+As briefly mentioned in Section~\ref{subsect:grism_reduce}, we employed the Grism Redshift and Line analysis 
+software \grzl to reduce the \hst WFC3/NIR grism data from raw exposures acquired by the \glass program.
+Our primary goal is to obtain the spatially resolved emission line intensities after removing the contribution 
+from source continuum.
+In terms of modeling the continuum spectrum, \grzl first produces a simple flat (in $F_{\lambda}$)
+spectral model for all sources within the WFC3 FoV with \H-band magnitude brighter than 26 ABmag.
+The normalization is determined to match the flux in the corresponding reference image (in our cases, F105W as 
+the reference to G102, and F140W to G141, ascribed to similar wavelength coverage).
+Then second-order polynomial functions are fitted to the sources whose \H-band magnitude is brighter than 24 
+ABmag.
+This process is done iteratively, until a convergence point where the residual in the grism exposures after
+subtracting the fitted continuum models becomes negligible.
+
+While the polynomially fitted continuua serve as good enough models for contamination subtraction
+associated with neighboring objects, this polynomial functional form is clearly not physically representative of
+the actual SED of the underlying stellar continuum for our sources of interest.
+To facilitate a more accurate continuum subtraction, we further refine the source continuum model by considering 
+primarily four template continuum spectra in a range of characteristic ages for stellar populations:
+\begin{enumerate}
+    \item a low-metallicity Lyman-break galaxy (Q2343-BX418) showing very young, blue continuum 
+    \citep{Erb:2010iy},
+    \item an intermediate-age composite SED with moderate Balmer break and 4000 \AA{} break, synthesized in 
+    \citet{Brammer:2008gn} following the method of \citet{KCorrectionsandFi:WJFCKqrW},
+    \item a post-starburst SED showing prominent Balmer break and 4000 \AA{} break from the UltraVISTA survey 
+    \citep{Muzzin:2013is},
+    \item a single stellar population SED with a 13.5 Gyr age and solar metallicity \citep{Conroy:2012bl}.
+\end{enumerate}
+This combination of both empirical and synthetic SED templates constitutes an optimized set appropriate for 
+redshift fitting and continuum subtraction under our situation.
+As discussed in \citet{Brammer:2008gn}, there is a trade-off between the number of templates used in SED fitting 
+and numerical efficiency, and they find that the improvement is negligible if the number of templates is 
+increased to above 5.
+For a sanity check, we also run the template fitting procedures using a more complete template library built from 
+the Flexible Stellar Population Synthesis (FSPS) models \citep{Conroy:2009ks,Conroy:2010ja,Conroy:2010bi} and 
+found no noticeable changes in the spectroscopic redshift determinations nor continuum subtractions.
+
+In addition to fitting stellar continuum, we model the intrinsic nebular emission lines in 1D spectra as Gaussian
+functions. The amplitudes and flux ratios between most of the line species are allowed to vary (except for some
+certain line complexes, \eg, $f_{\OIII~5008}/f_{\OIII~4960}$ = 3:1).
+Given the relatively low instrument resolution of \hst grisms, the dynamic motion of gas and stellar components 
+leave no effect on the observed profiles (both in 1D and 2D) of line emission/absorption features.
+However, for spatially extended sources, the effective spectral resolution is lowered by morphological broadening 
+\citep{vanDokkum:2011cq}, which usually varies with respective to the light-dispersion direction, \ie, the 
+position angle (P.A.).
+We explicitly take the source morphology into account via convolving the model spectra (stellar continuum + 
+nebular emission) with the direct image in reference frames averaged along light-dispersion directions.
+
+As a result, in Figures~\ref{fig:3751spec} and \ref{fig:1203spec}, we show the observed and fitted grism spectra 
+for both of our sources at separate P.A.s.
+Albeit slightly different in shape and slope, the red curves in 1D spectra comes from the same best-fit spectral 
+model for each source and the difference is due to slightly varying morphological broadening.
+We also see that the 2D continuum-subtracted spectra are sufficiently clean, preserving only the nebular emission
+features that we later combined to get the spatially resolved emission line maps shown in 
+Figure~\ref{fig:combELmap}.
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{fig/clA370_id03751_pa155_ELfig.png}
+    \includegraphics[width=\textwidth]{fig/clA370_id03751_pa253_ELfig.png}
+    \caption[The \hst grism spectra for source ID03751 in the field of \clsan taken by the \glass program.]
+    {The \hst grism spectra for source ID03751 in the field of \clsan taken by the \glass program.
+    The total science integration is equally distributed into two separate P.A.s,
+    reaching 5 orbits of G102 exposures and 2 orbits of G141 exposures per P.A., shown in two sub-figures.
+    In each sub-figure, from top to bottom, we show the optimally extracted 1D spectra and the full 2D spectra 
+    before and after source continuum subtraction, for both grism elements.
+    On the 1D spectra, the observed flux is represented by the blue solid line with 1-$\sigma$ noise level 
+    denoted by the cyan shaded band, and the 1D model spectrum (source continuum + nebular emission) is 
+    represented by the red dashed curve.
+    The observed locations of emission features are highlighted by vertical dotted lines in magenta and arrows in 
+    red, in 1D and 2D spectra respectively.
+    }
+    \label{fig:3751spec}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{fig/clM0744_id01203_pa019_ELfig.png}
+    \includegraphics[width=\textwidth]{fig/clM0744_id01203_pa104_ELfig.png}
+    \caption[Same as Figure~\ref{fig:3751spec}, except that source ID01203 in the field of \clba is shown.]
+    {Same as Figure~\ref{fig:3751spec}, except that source ID01203 in the field of \clba is shown.}
+    \label{fig:1203spec}
+\end{figure}
 
 
