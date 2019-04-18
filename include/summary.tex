@@ -1,0 +1,149 @@
+
+\chapter{Summary and Ongoing Work}
+
+In this dissertation, I have presented several published work of mine focused on the following topics.
+
+\begin{enumerate}
+    \item I model the total mass distribution of galaxy clusters (\cler in particular) to calibrate the
+    properties of these cosmic telescopes which magnify background sources to facilitate enhanced spatial
+    sampling at sub-kpc resolution further improved over \hst's native diffraction limit.
+    \item I devise a new Bayesian inference method to estimate gas-phase metallicity directly from strong nebular emission
+    line
+    fluxes rather than flux ratios, and bring forward a sample of ten star-forming galaxies at $z$$\sim$2 whose
+    radial gradients of metallicity are measured at sub-kpc resolution, from the ultra deep \hst WFC3/NIR grism
+    data.
+    \item I report the first ever measurements of strongly inverted metallicity gradients in dwarf galaxies
+    ($\Mstar\approx10^9\Msun$) at $z$$\sim$2, and map out their net gaseous flows in support of the
+    feedback-triggered metal-enriched outflows transporting stellar nucleosynthesis yields outwards thus
+    inverting the gradient.
+\end{enumerate}
+
+These work demonstrate the unique capability of the synergy of \hst WFC3/NIR slitless spectroscopy and
+gravitational lensing in pinpointing the \emph{precise} spatial distribution of galactic chemical properties at
+cosmic noon.  Combining these accurately mapped metallicity spatial distribution with the empirical modeling
+framework of galaxy evolution and star formation (\eg chemical evolution models, gas regulator models, the KS
+law, \etc), we are able to dissect the complex phenomena of galactic feedback and gas flows at the peak epoch of
+cosmic baryonic mass assembly.
+
+With that as the very goal, I am currently analyzing the entire \glass dataset, to put forward an unprecedentedly
+large sample of galaxies in the redshift range of $1.2\lesssim z\lesssim2.3$, with precisely measured metallicity
+gradients. The ten galaxy clusters targeted by \glass are shown in Table~\ref{tab:full_clusters}, and the
+color-composite images of nine of them, synthesized from \hst broad-band imaging, are displayed in
+Figure~\ref{fig:full_clusters}. Note that the RGB image of the remaining cluster (\ie \clyi) is already given in
+Figure~\ref{fig:RGBfullFoV}.
+
+\begin{landscape}
+%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+\input{table/full_clusters}
+%= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+\end{landscape}
+
+Following similar data reduction and analysis procedures described in previous chapters, I compiled a sample of 81
+galaxies, whose spatial distributions of \gpm are mapped out at sub-kpc resolution. These sources are marked by
+magenta circles in Figure~\ref{fig:full_clusters}.
+Collecting all currently existing sub-kpc resolution metallicity gradient measurements in high-$z$ star-forming
+galaxies, I investigate the redshift evolution and mass dependence of metallicity gradients, as shown in
+Figure~\ref{fig:full_metalgrad}.
+Undoubtedly, the vast majority of these measurements come from my space-based slitless spectroscopy analysis.
+Furthermore, this exhaustive sample of \emph{precise} metallicity gradients also includes measurements from ground-based AO-supported IFS observations \citep{2012MNRAS.426..935S,2013ApJ...765...48J,2015arXiv150901279L}. 
+In comparison, ground-based seeing-limited measurements lack sufficient resolution due to beam smearing, 
+and thus tend to show flat radial gradients (see the spread of \kd results, \citet{2016ApJ...827...74W}).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{/Users/albert/data/abell2744_HFF/rgb.pdf}\\
+    \caption[\glass grism exposures and source selection in this work.]
+    {The color-composite images of the galaxy cluster centers exposed by \hst WFC3/NIR grism elements (10 orbits
+    of G102 and 4 orbits of G141) from the \glass program. The entire amount of exposure time is equally
+    deposited into 2 separate pointings represented by the red and green squares with light dispersion directions
+    denoted by the arrows in the upper right corner.
+    The sample of star-forming galaxies in which I secure \emph{unbiased} measurements of metallicity radial gradients are marked by magenta circles.
+    The cyan contours are the critical curves at sample median redshift.
+    }
+    \label{fig:full_clusters}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{/Users/albert/data/macs0416_HFF/rgb.pdf}\\
+    \includegraphics[width=.8\textwidth]{/Users/albert/data/macs0717_HFF/rgb.pdf}
+    \contcaption{(cont.)}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{/Users/albert/data/abell370_HFF/rgb.pdf}\\
+    \includegraphics[width=.8\textwidth]{/Users/albert/data/rxj2248_HFF/rgb.pdf}
+    \contcaption{(cont.)}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{/Users/albert/data/rxj1347_CLASH/rgb.pdf}\\
+    \includegraphics[width=.8\textwidth]{/Users/albert/data/macs0744_CLASH/rgb.pdf}
+    \contcaption{(cont.)}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{/Users/albert/data/macs2129_CLASH/rgb.pdf}\\
+    \includegraphics[width=.8\textwidth]{/Users/albert/data/macs1423_CLASH/rgb.pdf}
+    \contcaption{(cont.)}
+\end{figure}
+
+With the sample statistics improved by one order of magnitude primarily thanks to my ongoing efforts, we start to
+develop some crucial insights from the redshift and mass dependences of metallicity gradients.
+The radial gradient of metallicity has been used as a great proxy of the strength and effectiveness of
+galactic feedback. The orange tracks in the upper panel of Figure~\ref{fig:full_metalgrad} correspond to two
+simulation realizations of MW at $z=0$, with different feedback sub-grid prescriptions but otherwise identical
+numerical setup \citep[][G13]{Gibson:2013jw}.
+This demonstrates that enhanced feedback can be really efficient in erasing metal inhomogeneity, and resolved
+chemical properties measured in the early phase of disk growth can really shed light on the strength of galactic
+feedback.
+
+As a whole, the current measurements of \emph{unbiased} metallicity gradients (points in Figure~\ref{fig:full_metalgrad}) lead us to the following conclusions.
+\begin{enumerate}
+    \item The metallicity inhomogeneity throughout the disk mass assembly process is frequently seen, which is
+    in acute disapproval of the constant influence of strong galactic feedback and/or galaxy coalescence
+    (see the 2-$\sigma$ shaded region of Illustris simulations).
+    \item There exist sizable scatters in the observational measurements of metal gradients, not yet reproduced
+    in any single suites of cosmological hydro-simulations (see the 2-$\sigma$ shaded regions of IllustrisTNG and
+    FIRE). But the FIRE simulation predicts the mass dependence of metallicity gradients in better agreement with
+    observations.
+    \item There is a non-negligible fraction (10/81) of galaxies showing inverted metallicity gradients. This
+    phenomenon is quite unconventional from the classic theory of galaxy evolution and thus poses great
+    challenge to the predicted evolutionary trends given by analytical chemical evolution models (see \eg, the
+    shaded region of \citet{Molla:2005eq}).
+\end{enumerate}
+
+% a way forward and future prospect
+The mass dependence of metallicity gradient encodes key information about the temporal evolution of galactic
+chemo-structural properties.
+If we could isolate cohorts of galaxies at different cosmic epochs (\ie with different masses) that 
+hypothetically follow the same evolutionary trajectory to become MWs at $z=0$,
+then the cross-sectional snapshots of these metallicity spatial distributions at various mass assembly stages
+reflect the longitudinal behaviors of MW progenitors at the corresponding ages.
+This approach can be extremely powerful in unraveling the chemical evolution of galaxies, and therefore cast 
+strong constraints on the effect of star formation and galactic feedback in shaping the galactic chemo-structures
+at various stages of disk growth.
+Apparently it will require a much larger sample of galaxies targeted by diffraction-limited spatially resolved
+spectroscopy, only achievable through space-based slitless spectroscopic campaigns.
+With the continued input of \hst resources, as well as the great prospect promised by future space missions with
+grism capabilities, \eg, the James Webb Space Telescope (JWST), the Euclid telescope, the Wide Field Infrared
+Survey Telescope (WFIRST), the Chinese Space Station Telescope (CSST), I am confident that this much larger
+sample will be obtained and will completely revolutionize our understanding of the chemo-structural evolution of 
+galaxies (including our MW) throughout vast cosmic time.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{/Users/albert/Dropbox/Python/metalP3/oh12gradVSz_plaskett.png}\\
+    \includegraphics[width=\textwidth]{/Users/albert/Dropbox/Python/metalP3/oh12gradVSmstar_plaskett.png}
+    \caption[The redshift evolution and mass dependence of all \emph{unbiasedly} measured metallicity gradients
+    in high-$z$ star-forming galaxies.]
+    {The redshift evolution and mass dependence of all metallicity gradients in high-$z$ star-forming galaxies 
+    measured at sub-kpc resolution, unbiased from the beam smearing effect. It is obvious that my analysis results based on the
+    combination of \hst WFC3/NIR grism slitless spectroscopy and lensing magnification constitute a major portion
+    of all these measurements.}
+    \label{fig:full_metalgrad}
+\end{figure}
+

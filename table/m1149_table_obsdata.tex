@@ -3,10 +3,11 @@
 % To rotate in emulateapj do: \begin{turnpage}\input{filename.tex}\end{turnpage}
 % To display it on multiple pages do: \LongTables\input{filename.tex}
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-{\setlength\tabcolsep{2pt}
-\begin{deluxetable}{cccp{2.5cm}ccccccccc} \tablecolumns{13}
-\tablewidth{0pt}
-\tablecaption{Properties of the grism spectroscopic data used in this work}
+\begin{deluxetable}{cccp{4cm}ccccccccc}
+    \tablecolumns{13}
+    \tabcolsep=0.3cm
+    \tablewidth{0pt}
+    \tablecaption{Properties of the grism spectroscopic data used in this work}
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \tablehead{
     \colhead{PA\tablenotemark{a}} &
@@ -34,4 +35,3 @@
 grism spectra is given by $\mathrm{PA_{disp}} \approx \mathrm{PA\_V3} - 45$.}
 \label{tab:obsdata}
 \end{deluxetable}
-}

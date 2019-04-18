@@ -1,0 +1,43 @@
+% = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+% Include this table with \input{filename.tex}
+% To rotate in emulateapj do: \begin{turnpage}\input{filename.tex}\end{turnpage}
+% To display it on multiple pages do: \LongTables\input{filename.tex}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\begin{deluxetable}{llcccclcccccc}
+    \tablecolumns{13}
+    \tablewidth{0pt}
+    \tablecaption{Properties of the grism spectroscopic data used in this work}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\tablehead{
+    \colhead{Cluster} &
+    \colhead{Alias} &
+    \colhead{Redshift} &
+    \colhead{RA}  &
+    \colhead{DEC} &
+    \colhead{Grism P.A.s\tablenotemark{a}} & 
+    \colhead{\hst imaging} \\
+    & & &
+    \colhead{(J2000)} &
+    \colhead{(J2000)} &
+    & 
+}
+%---------------------------------------------------------------
+\startdata
+    MACS0717.5+3745 & MACS0717  &   0.548   &   07:17:34.0  &  +37:44:49.0  & 020, 280 & \clash/\hff  \\
+    MACS1423.8+2404 & MACS1423  &   0.545   &   14:23:48.3  &  +24:04:47.0  & 008, 088 & \clash   \\
+    MACS1149.6+2223\tablenotemark{b} & MACS1149  &   0.544   &   11:49:36.3  &  +22:23:58.1  & 032, 111, 119, 125 & \clash/\hff &  \\
+    RXJ1347.5-1145  & RXJ1347   &   0.451   &   13:47:30.6  &  -11:45:10.0  & 203, 283 & \clash   \\
+    RXJ2248.7-4431  & RXJ2248   &   0.348   &   22:48:44.4  &  -44:31:48.5  & 053, 133 & \clash/\hff  \\
+    MACS2129.4-0741 & MACS2129  &   0.570   &   21:29:26.0  &  -07:41:28.0  & 050, 328 & \clash   \\
+    Abell 2744      & A2744     &   0.308   &   00:14:21.2  &  -30:23:50.1  & 135, 233 & \hff   \\
+    MACS0744.9+3927 & MACS0744  &   0.686   &   07:44:52.8  &  +39:27:24.0  & 019, 104 & \clash   \\
+    Abell 370       & A370      &   0.375   &   02:39:52.9  &  -01:34:36.5  & 155, 253 & \hff   \\
+    MACS0416.1-2403 & MACS0416  &   0.420   &   04:16:08.9  &  -24:04:28.7  & 164, 247 & \clash/\hff 
+\enddata
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    \tablenotetext{a}{The position angles (P.A.s) shown here correspond to the ``PA\_V3'' value reported in the WFC3/IR
+    image headers. The position angle of the dispersion axis of the grism spectra is given by $\mathrm{PA_{disp}}
+    \approx \mathrm{PA\_V3} - 45$.}
+    \tablenotetext{b}{The data analysis for this field has been presented in \citet{Wang:2016um} (see Chapter~3).}
+\label{tab:full_clusters}
+\end{deluxetable}
